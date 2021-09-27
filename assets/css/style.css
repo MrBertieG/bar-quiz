@@ -7,6 +7,7 @@
 
 header {
     background-color: aqua;
+    height: 57px;
 }
 
 #menu-top-bar{
@@ -20,14 +21,13 @@ header {
     left: 10%;
 }
 
-/*Sandwich Menu*/
+/*Sandwich Menu Start*/
 .container {
     cursor: pointer;
     float: right;
     margin-top: 2%;
     margin-right: 2%;
   }
-  
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
@@ -35,18 +35,16 @@ header {
     margin: 6px 0;
     transition: 0.4s;
   }
-  
   .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
   }
-  
   .change .bar2 {opacity: 0;}
-  
   .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
   }
+  /*Sandwich Menu Start Finish/
   
   /*Exit Logo*/
   .fa-sign-out-alt {
@@ -54,4 +52,25 @@ header {
     position: relative;
     right: 5%;
     top: 14px;
+  }
+
+  /*Main Banner Image*/
+  #main-banner-container {
+      width: 100%;
+      height: 100%;
+  }
+
+  #main-banner-container > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Footer */
+  footer {
+      text-align: center;
+  }
+
+  footer > i {
+      margin-left: 8%;
+      margin-right: 8%;
   }
