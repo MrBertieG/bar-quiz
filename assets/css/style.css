@@ -38,6 +38,13 @@ header {
   color: rgb(223,203,192);
 }
 
+.fa-glass-whiskey {
+  color: rgb(223,203,192); 
+  float: right; 
+  margin-top: 2%; 
+  margin-right: 1%;
+}
+
 .fa-sign-out-alt {
   color: rgb(223,203,192); 
   display: inline;
@@ -180,4 +187,23 @@ header {
     color: rgb(174,49,14);
   }
 
-  
+  /*Tablet and Desktop Screen Size */
+  @media screen and (min-width: 600px) {
+    html {
+      width: 85%;
+      margin: 5% auto;
+    }
+
+    header {
+      width: 85%;
+    }
+
+    .fa-cocktail {
+      margin-top: 0%; 
+    }
+    
+    .fa-glass-whiskey {
+      margin-top: 1%; 
+    }
+
+  }
