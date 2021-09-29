@@ -15,11 +15,6 @@ header {
     top: 0;
     width: 100%;
 }
-}
-
-#menu-top-bar{
-    display: inline-block;
-}
 
 #title-logo {
     display: inline;
@@ -27,14 +22,34 @@ header {
     position: relative;
     left: 10%;
     font-family: Oswald, sans-serif;
+    color: black;
+}
+
+.menu-btn {
+  display: inline;
+  float: right;
+  margin-top: 2%;
+  margin-right: 2%;
+}
+
+.fa-cocktail {
+  margin-top: 1%; 
+  margin-left: 1%; 
+  color: rgb(223,203,192);
+}
+
+.fa-sign-out-alt {
+  color: rgb(223,203,192); 
+  display: inline;
+  position: inherit;
+  float: right;
+  right: 15%;
+  top: 10px;
 }
 
 /*Sandwich Menu Start*/
 .container {
-    cursor: pointer;
-    float: right;
-    margin-top: 2%;
-    margin-right: 2%;
+    cursor: pointer; 
   }
 
   .bar1, .bar2, .bar3 {
@@ -66,6 +81,7 @@ header {
   /* Dropdown Menu Start */
   .rules {
     position: absolute;
+    left: 47%;
     background-color: white;
     margin-top: 10px;
     width: 200px;
@@ -75,18 +91,21 @@ header {
     align-items: center;
     flex-direction: column;
     border-radius: 5px;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.4s ease-in;
   }
 
+  .menu-btn:focus + .rules {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+    }
   
   /* Dropdown Menu Finish */
   
-  /*Exit Logo*/
-  .fa-sign-out-alt {
-    float: right;
-    position: relative;
-    right: 5%;
-    top: 14px;
-  }
 
   /*Main Banner Image*/
   #main-banner-container {
@@ -121,7 +140,17 @@ header {
     text-align: center;
   }
 
-  button {
+  .menu-btn {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+
+  .go-btn {
     font-family: Exo, sans-serif;
     background-color: rgb(223,203,192);
     width: 160px;
@@ -150,3 +179,5 @@ header {
     text-decoration: none;
     color: rgb(174,49,14);
   }
+
+  
