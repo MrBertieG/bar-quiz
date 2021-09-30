@@ -171,6 +171,19 @@ header {
     border: 3px solid rgb(248,231,222);
   }
 
+  /* Quiz Page */
+
+  .start-btn {
+    position: fixed;
+    bottom: 73%;
+    left: 41%;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    border-radius: 5px;
+  }
+
   /* Footer */
   footer {
       text-align: center;
@@ -188,7 +201,7 @@ header {
   }
 
   /*Tablet and Desktop Screen Size */
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 500px) {
     html {
       width: 85%;
       margin: 5% auto;
@@ -196,6 +209,10 @@ header {
 
     header {
       width: 85%;
+    }
+
+    #main-banner-container {
+      margin-top: 10%;
     }
 
     .fa-cocktail {
@@ -212,6 +229,25 @@ header {
 
     .menu-btn {
       margin-right: 1%;
+    }
+
+  }
+  /* Screen Size > 1250 */
+  @media screen and (min-width: 1250px) {
+    html {
+      width: 75%;
+    }
+
+    header {
+      width: 75%;
+    }
+
+    #main-banner-container {
+      margin-top: 0;
+    }
+
+    .fa-glass-whiskey {
+      margin-top: 5px; 
     }
 
   }
