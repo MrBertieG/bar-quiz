@@ -13,13 +13,14 @@ html {
 }
 
 nav {
-    background-color: rgb(174,49,14, 0.8);
-    display: grid;
-    grid-template-columns: 10% 1fr 15%;
-    min-height: 10vh;
-    color: white;
-    align-items: center;
+  background-color: rgb(174,49,14, 0.8);
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 15%;
+  min-height: 10vh;
+  color: white;
+  align-items: center;
 }
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -28,6 +29,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   margin-left: auto;
+  font-family: Exo, sans-serif;
 }
 
 .nav-links li a {
@@ -35,6 +37,8 @@ nav {
   text-decoration: none;
   font-size: 16px;
 }
+
+/* Screen Size Smaller than 500px*/
 
 @media screen and (max-width: 500px) {
 
@@ -52,15 +56,16 @@ nav {
   .hamburger {
     position: absolute;
     cursor: pointer;
-    right: 5%;
-    top: 15%;
+    right: 4%;
+    top: 19%;
     transform: translate(-5%, 50%);
     z-index: 10;
   }
   
+  /* Menu Window Open */
   .nav-links {
     position: fixed;
-    background-color: rgb(206, 144, 110);
+    background-color: rgb(174,49,14, 1);
     height: 100vh;
     width: 100%;
     flex-direction: column;
@@ -90,28 +95,21 @@ nav {
     font-size: 25px;
   }
 
-  .nav.links li:nth-child(1) {
+  /* Fade Effect */
+  .nav-links li:nth-child(1) {
     transition: all 0.5s ease 0.2s;
   }
 
-  .nav.links li:nth-child(2) {
+  .nav-links li:nth-child(2) {
     transition: all 0.5s ease 0.4s;
   }
 
-  .nav.links li:nth-child(3) {
+  .nav-links li:nth-child(3) {
     transition: all 0.5s ease 0.6s;
   }
   li.fade {
     opacity: 1;
   }
-}
-
-header {
-    height: 9vh;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 3;
 }
 
 #title-logo {
@@ -145,7 +143,8 @@ header {
   float: right;
   right: 15%;
   top: 10px;
-  grid-column: 4;
+  grid-column: 3;
+  justify-self:  right;
 }
 
   /*Main Banner Image*/
@@ -208,23 +207,6 @@ header {
   }
 
   /* Quiz Page */
-
-  .start-btn {
-    position: fixed;
-    bottom: 73%;
-    left: 41%;
-    padding: 5px;
-    width: fit-content;
-    height: fit-content;
-    background-color: white;
-    border-radius: 5px;
-  }
-
-  .quiz-window {
-    height: fit-content;
-    width: fit-content;
-    padding: 5px;
-  }
 
   /* Footer */
   footer {
