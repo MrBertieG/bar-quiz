@@ -13,7 +13,7 @@ hamburger.addEventListener('click', () => {
 //Rules Selector
 const openRulesButtons = document.querySelectorAll('[data-rules-target]');
 const closeRulesButtons = document.querySelectorAll('[data-close-button]');
-const overlay = document.getElementsByClassName('rules-overlay');
+const overlay = document.getElementsByClassName('overlay');
 
 openRulesButtons.forEach(button => {
   button.addEventListener('click', () => {
@@ -36,9 +36,41 @@ function openRules(rules) {
     overlay.classList.add('active');
   };
 
-  function closeRules(rules) {
-    if (rules == null) 
+function closeRules(rules) {
+  if (rules == null) 
+  return 
+  rules.classList.remove('active'),
+  overlay.classList.remove('active');
+};
+
+//Contact Selector
+const openContactButtons = document.querySelectorAll('[data-contact-target]');
+const closeContactButtons = document.querySelectorAll('[data-close-button]');
+
+openContactButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const contact = document.querySelector(button.dataset.contactTarget);
+    openContact(contact);
+  });
+});
+
+closeContactButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const contact = button.closest('.contact');
+    closeRules(contact);
+  });
+});
+
+function openContact(contact) {
+  if (contact == null) 
+  return
+    contact.classList.add('active'),
+    overlay.classList.add('active');
+  };
+
+  function closeContact(contact) {
+    if (contact == null) 
     return 
-    rules.classList.remove('active'),
+    contact.classList.remove('active'),
     overlay.classList.remove('active');
   };
