@@ -40,7 +40,7 @@ nav {
 
 /* Screen Size Smaller than 500px*/
 
-@media screen and (max-width: 500px) {
+
 
   .line {
     width: 30px;
@@ -56,8 +56,8 @@ nav {
   .hamburger {
     position: absolute;
     cursor: pointer;
-    right: 4%;
-    top: 19%;
+    right: 3%;
+    top: 15%;
     transform: translate(-5%, 50%);
     z-index: 10;
   }
@@ -110,7 +110,7 @@ nav {
   li.fade {
     opacity: 1;
   }
-}
+
 
 #title-logo {
     display: inline;
@@ -119,7 +119,7 @@ nav {
     left: 10%;
     font-family: Oswald, sans-serif;
     color: black;
-    font-size: 264%;
+    font-size: 240%;
     justify-self: left;
     padding-left: 15px;
     grid-column: 2;
@@ -208,6 +208,67 @@ nav {
 
   /* Quiz Page */
 
+  /* Menu buttons */
+  /* Rules Window */
+    .rules {
+      position: fixed;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      transition: 200ms ease-in-out;
+      border: 1px solid black;
+      border-radius: 5px;
+      z-index: 11;
+      background-color: rgb(223,203,192);
+      height: 200px;
+      width: 300px;
+      font-family: Exo, sans-serif;
+    }
+
+    .rules.active {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .rules-header {
+      display: flex;
+      padding: 10px 5px;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid black;
+    }
+
+    .rules-list {
+      padding-top: 25px;
+      padding-left: 25px;
+    }
+
+    /* Close Button */
+    .rules-header .x-btn {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      background: none;
+      font: 1.5rem;
+      font-weight: bold;
+    }
+
+    .rules-overlay {
+      position: fixed;
+      opacity: 0;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(174,49,14, 1);
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .rules-overlay.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
   /* Footer */
   footer {
       text-align: center;
@@ -224,32 +285,7 @@ nav {
     color: rgb(174,49,14);
   }
 
-  /*Tablet and Desktop Screen Size */
-  @media screen and (min-width: 500px) {
-    html {
-      width: 85%;
-      margin: 5% auto;
-    }
-
-    header {
-      width: 85%;
-    }
-
-    #main-banner-container {
-      margin-top: 10%;
-    }
-
-    .fa-cocktail {
-      margin-top: 0%; 
-    }
-    
-    .fa-glass-whiskey {
-      margin-top: 1%; 
-    }
-
-    #main-intro {
-      top: 28%;
-    }
+  
 
   }
   /* Screen Size > 1250 */
