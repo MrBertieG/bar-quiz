@@ -209,7 +209,7 @@ nav {
   /* Quiz Page */
 
   /* Menu buttons */
-  /* Rules Window */
+  /* Rules + Contact Window */
     .rules {
       position: fixed;
       top: 40%;
@@ -229,13 +229,13 @@ nav {
       position: fixed;
       top: 40%;
       left: 50%;
-      transform: translate(-50%, -50%) scale(0);
+      transform: translate(-50%, -50%) scale(1);
       transition: 200ms ease-in-out;
       border: 1px solid black;
       border-radius: 5px;
       z-index: 11;
       background-color: rgb(223,203,192);
-      height: 200px;
+      height: 330px;
       width: 300px;
       font-family: Exo, sans-serif;
     }
@@ -304,6 +304,17 @@ nav {
     .overlay.active {
       opacity: 1;
       pointer-events: all;
+    }
+
+    /* Contact Form */
+    fieldset {
+      padding-left: 5px;
+    }
+
+    .cont-info {
+      font-size: 100%;
+      padding-left: 5px;
+      font-family: Exo, sans-serif;
     }
 
   /* Footer */
