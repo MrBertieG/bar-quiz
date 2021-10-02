@@ -89,6 +89,7 @@ nav {
 
   .nav-links li {
     opacity: 0;
+    cursor: pointer;
   }
 
   .nav-links li a {
@@ -229,13 +230,13 @@ nav {
       position: fixed;
       top: 40%;
       left: 50%;
-      transform: translate(-50%, -50%) scale(1);
+      transform: translate(-50%, -50%) scale(0);
       transition: 200ms ease-in-out;
       border: 1px solid black;
       border-radius: 5px;
       z-index: 11;
       background-color: rgb(223,203,192);
-      height: 330px;
+      height: 390px;
       width: 300px;
       font-family: Exo, sans-serif;
     }
@@ -307,14 +308,44 @@ nav {
     }
 
     /* Contact Form */
+    fieldset input {
+      padding-left: 5px;
+      border-radius: 5px;
+    }
+
+
     fieldset {
       padding-left: 5px;
     }
 
+    fieldset textarea {
+      width: 98%;
+      padding-left: 5px;
+      border-radius: 5px;
+    }
+
     .cont-info {
+      float: left;
       font-size: 100%;
       padding-left: 5px;
       font-family: Exo, sans-serif;
+      margin-top: 5%;
+    }
+
+    .button1 {
+      float: left;
+      padding: 0 5px 0 5px;
+      margin-left: 7px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .button2 {
+      float: right;
+      padding: 0 5px 0 5px;
+      margin-right: 7px;
+      border-radius: 5px;
+      cursor: pointer;
     }
 
   /* Footer */
