@@ -1,8 +1,10 @@
-function myFunction(x) {
-    x.classList.toggle("change");
-  }
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const links = document.querySelectorAll('.nav-links li');
 
-const mainImg = document.querySelector('#main-banner-container');
-const slider = document.querySelector('.slider');
-const mainIntro = document.querySelector('#main-intro');
-const titleLogo = document.querySelector('#title-logo');
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+  links.forEach(link => {
+    link.classList.toggle('fade');
+  });
+});
