@@ -200,6 +200,34 @@ li.fade {
 
 /* Quiz Page */
 /* Rules + Contact Window Animation*/
+
+	.description-box {
+	background-color: rgb(223, 203, 192);
+	width: 270px;
+	height: 190px;
+	position: fixed;
+	top: 25%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
+	border: 3px solid rgb(248, 231, 222);
+	border-radius: 5px;
+	}
+.start-quiz {
+	font-family: Exo, sans-serif;
+	background-color: rgb(223, 203, 192);
+	width: 160px;
+	height: 40px;
+	position: fixed;
+	top: 69%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
+	border: 3px solid rgb(248, 231, 222);
+}
+
 .rules {
 	position: fixed;
 	top: 40%;
@@ -368,6 +396,7 @@ a {
 		position: fixed;
 		z-index: 20;
 		grid-template-columns: 21% 1fr 1fr 15%;
+		margin-top: -10%;
 	}
 	.hamburger {
 		display: none;
