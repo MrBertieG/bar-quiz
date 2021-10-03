@@ -12,9 +12,10 @@ html {
 	background-color: rgb(223, 203, 192);
 }
 
+/* Navigation Bar */
 nav {
 	overflow: hidden;
-	position: fixed;
+	position: relative;
 	background-color: rgb(174, 49, 14, 0.8);
 	display: grid;
 	grid-template-columns: 10% 1fr 1fr 15%;
@@ -27,86 +28,6 @@ nav {
 	color: white;
 	text-decoration: none;
 	font-size: 16px;
-}
-
-.line {
-	width: 30px;
-	height: 3px;
-	background: white;
-	margin: 5px;
-}
-
-nav {
-	position: relative;
-}
-
-.hamburger {
-	position: absolute;
-	cursor: pointer;
-	right: 3%;
-	top: 15%;
-	transform: translate(-5%, 50%);
-	z-index: 10;
-}
-
-
-/* Menu Window Open */
-
-.nav-links {
-	display: flex;
-	list-style: none;
-	justify-content: space-around;
-	align-items: center;
-	font-family: Exo, sans-serif;
-	position: fixed;
-	background-color: rgb(174, 49, 14, 1);
-	height: 100vh;
-	width: 100%;
-	flex-direction: column;
-	z-index: 3;
-	margin-top: 150%;
-	clip-path: circle(100px at 90% -12%);
-	-webkit-clip-path: (100px at 90% -12%);
-	transition: all 1s ease-out;
-	pointer-events: none;
-}
-
-.nav-links.open {
-	clip-path: circle(1000px at 90% -12%);
-	-webkit-clip-path: (100px at 90% -12%);
-	pointer-events: all;
-}
-
-.landing {
-	flex-direction: column;
-}
-
-.nav-links li {
-	opacity: 0;
-	cursor: pointer;
-}
-
-.nav-links li a {
-	font-size: 25px;
-}
-
-
-/* Fade Effect */
-
-.nav-links li:nth-child(1) {
-	transition: all 0.5s ease 0.2s;
-}
-
-.nav-links li:nth-child(2) {
-	transition: all 0.5s ease 0.4s;
-}
-
-.nav-links li:nth-child(3) {
-	transition: all 0.5s ease 0.6s;
-}
-
-li.fade {
-	opacity: 1;
 }
 
 #title-logo {
@@ -144,9 +65,82 @@ li.fade {
 	justify-self: right;
 }
 
+/* Hamburger Menu */
+.line {
+	width: 30px;
+	height: 3px;
+	background: white;
+	margin: 5px;
+}
+
+.hamburger {
+	position: absolute;
+	cursor: pointer;
+	right: 3%;
+	top: 15%;
+	transform: translate(-5%, 50%);
+	z-index: 10;
+}
+
+/* Menu Window Open */
+.nav-links {
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+	align-items: center;
+	font-family: Exo, sans-serif;
+	position: fixed;
+	background-color: rgb(174, 49, 14, 1);
+	height: 100vh;
+	width: 100%;
+	flex-direction: column;
+	z-index: 3;
+	margin-top: 150%;
+	clip-path: circle(100px at 90% -12%);
+	-webkit-clip-path: (100px at 90% -12%);
+	transition: all 1s ease-out;
+	pointer-events: none;
+}
+
+/* Open Effect Background*/
+.nav-links.open {
+	clip-path: circle(1000px at 90% -12%);
+	-webkit-clip-path: (100px at 90% -12%);
+	pointer-events: all;
+}
+
+.landing {
+	flex-direction: column;
+}
+
+.nav-links li {
+	opacity: 0;
+	cursor: pointer;
+}
+
+.nav-links li a {
+	font-size: 25px;
+}
+
+
+/* Fade Effect */
+.nav-links li:nth-child(1) {
+	transition: all 0.5s ease 0.2s;
+}
+
+.nav-links li:nth-child(2) {
+	transition: all 0.5s ease 0.4s;
+}
+
+.nav-links li:nth-child(3) {
+	transition: all 0.5s ease 0.6s;
+}
+
+li.fade {
+	opacity: 1;
+}
 
 /*Main Banner Image*/
-
 #main-banner-container {
 	width: 100%;
 	height: 100%;
@@ -170,9 +164,7 @@ li.fade {
 	height: 100%;
 }
 
-
-/* Intro Box */
-
+/* Intro Box Landing Page*/
 #main-intro {
 	background-color: rgb(223, 203, 192);
 	width: 270px;
@@ -209,13 +201,7 @@ li.fade {
 
 
 /* Quiz Page */
-
-
-/* Menu buttons */
-
-
-/* Rules + Contact Window */
-
+/* Rules + Contact Window Animation*/
 .rules {
 	position: fixed;
 	top: 40%;
@@ -275,9 +261,7 @@ li.fade {
 	padding-left: 25px;
 }
 
-
-/* Close Button */
-
+/* Close X Button */
 .rules-header .x-btn {
 	cursor: pointer;
 	border: none;
@@ -296,9 +280,7 @@ li.fade {
 	font-weight: bold;
 }
 
-
 /* Overlay effect */
-
 .overlay {
 	position: fixed;
 	opacity: 0;
@@ -316,9 +298,7 @@ li.fade {
 	pointer-events: all;
 }
 
-
 /* Contact Form */
-
 fieldset input {
 	padding-left: 5px;
 	border-radius: 5px;
