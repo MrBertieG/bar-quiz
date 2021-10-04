@@ -54,3 +54,64 @@ let questionts = [
         answer: 3,
     },
 ]
+
+const score_points = 100;
+const max_questions = 4;
+
+startgame = () => {
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...question];
+    getNewQuestions ();
+}
+
+//Keeping Track of the score
+getNewQuestions = () => {
+    if(availableQuestions.length === 0 || questionCounter > max_questions) {
+        localStorage.setItem('mostRecentScore', score);
+        return window.location.assign('/end.html')
+    }
+    //Question Counter
+    questionCounter++
+    progressText.innertext =`Question ${questionCounter} of ${max_questions}`;
+    //Calculates the current question number the user is and adds the % in the loading bar
+    progressBarFull.style.width = `${(questionCounter/max_questions) * 100}%`;
+
+    const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions[questionsIndex];
+    question.innerText = currentQuestion.question;
+
+    choices.forEach(choice => {
+        const number = choice.dataset['number']
+        choice.innerText = currentQuestion['choice' + number];
+    })
+
+    availableQuestions.splice(questionsIndex, 1);
+
+    acceptingAnswers = true;
+}
+
+choices,forEach(choice => {
+    choice.addEventListener('click', e => {
+        if(!acceptingAnswers) return
+
+        acceptingAnswers = false;
+        const selectedChoice = e.target;
+        const selectedAnswer = selectedChoice.dataset['number'];
+
+        //Determines the colour of the box if the answer is correct or incorrect
+        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+
+        //Increases the total score by 100 points if correct
+        if(classToApply === 'correct') {
+            incrementScire(score_points)
+        }
+
+        selectedChoice.parentElement.classList.addEventListener(classToApply);
+
+        setTimeout(() => {
+            selectedChoice.parentElement.parentElement.classList.remove(classToApply);
+        })
+    })
+})
+
