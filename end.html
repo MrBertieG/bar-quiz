@@ -95,71 +95,6 @@
     <div class="overlay"></div>
     </section>
 
-    <section class="game-box">
-        <div class="description-box">
-            <h2>In order to complete the test you must:</h2>
-            <ol>
-                <li>Select at least one answer.</li>
-                <li>Answer all questions.</li>
-                <li>Do not use Google to search the answers.</li>
-            </ol>
-        </div>
-        <button class="start-quiz">Take Test</button>
-    
-    </section>
-    <section>
-        <div id="game" class="justify-center flex-column">
-            <div id="hud">
-                <div class="hud-item">
-                    <p id="progressText" class="hud-prefix">
-                    question
-                    </p>
-                </div>
-                <div class="hud-item">
-                    <p class="hud-prefix">
-                        score
-                    </p>
-                    <h1 class="hud-mai-text" id="score">
-                        0
-                    </h1>
-                </div>
-            </div>
-            <h1 id="question">What are the 3 main ingredietns of a vodka martini?</h1>
-            <div class="choice-container">
-                <p class="choice-prefix">A</p>
-                <p class="choice-text" data-number="1">Choice</p>
-            </div>
-            <div class="choice-container">
-                <p class="choice-prefix">B</p>
-                <p class="choice-text" data-number="2">Choice</p>
-            </div>
-            <div class="choice-container">
-                <p class="choice-prefix">C</p>
-                <p class="choice-text" data-number="3">Choice</p>
-            </div>
-            <div class="choice-container">
-                <p class="choice-prefix">D</p>
-                <p class="choice-text" data-number="4">Choice</p>
-            </div>
-            <div id="progressBar">
-                <div id="progressBarFull"></div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="result-container">
-            <div id="end" class="flex-center flex-column">
-                <h1 id="finalScore">0</h1>
-                <form action="" class="end-form-container">
-                    <h2 id="end-text">Enter your name below to save your score</h2>
-                    <button type = "submit" class="btn-submit" id="saveScoreBtn">Save</button>
-                </form>
-                <a href="/new-quiz-page.html" class="btn-submit">Play Again</a>
-                <a href="/index.html" class="btn-submit">Go Home</a>
-            </div>
-        </div>
-    </section>
     <footer>
         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
         <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a>
@@ -170,6 +105,8 @@
     <!--Java Script Files Link-->
     <script src="assets/js/java.js"></script>
     <script src="assets/js/quiz.js"></script>
+    <script src="assets/js/highscores.js"></script>
+    <script src="assets/js/end.js"></script>
     <!--Font Awesome script-->
     <script src="https://kit.fontawesome.com/2ee9af80e1.js" crossorigin="anonymous"></script>
 </body>

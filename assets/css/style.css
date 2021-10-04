@@ -213,10 +213,23 @@ li.fade {
 	margin: 0 auto;
 	border: 3px solid rgb(248, 231, 222);
 	border-radius: 5px;
+	font-family: exo, sans-serif;
+	}
+
+	.description-box h2 {
+		font-size: 120%;
+		border-bottom: 1px solid black;
+		
+	}
+
+	.description-box li {
+		list-style-position: inside;
+		padding-top: 11px;
 	}
 .start-quiz {
 	font-family: Exo, sans-serif;
 	background-color: rgb(223, 203, 192);
+	font-weight: 1000;
 	width: 160px;
 	height: 40px;
 	position: fixed;
@@ -545,11 +558,12 @@ input::placeholder {
 
 @media screen and (min-width: 1250px) {
 	html {
-		width: 75%;
+		width: 60%;
 		margin: 0 auto;
 	}
-	header {
-		width: 75%;
+	nav {
+		width: 60%;
+		margin-top: 0%;
 	}
 	#main-banner-container {
 		margin-top: 0;
