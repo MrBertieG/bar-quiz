@@ -10,6 +10,7 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
+//Question Array
 let questions = [
     {
         question: 'What are the 3 main ingreadients of a Vodka Martini?',
@@ -58,6 +59,7 @@ let questions = [
 const score_points = 100;
 const max_questions = 6;
 
+//Game Function
 startGame = () => {
     questionCounter = 0;
     score = 0;
@@ -111,7 +113,7 @@ choices.forEach(choice => {
         if(classToApply === 'correct') {
             incrementScore(score_points);
         };
-
+        //Increase the score if true
         selectedChoice.parentElement.classList.add(classToApply);
 
         setTimeout(() => {

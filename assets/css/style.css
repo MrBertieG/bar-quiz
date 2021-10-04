@@ -448,6 +448,47 @@ a {
 	width: 0;
 }
 
+/* End Game Page */
+.end-form-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 50px;
+}
+
+input {
+	margin-bottom: 10px;
+	width: 30px;
+	padding: 10px;
+	border: none;
+	box-shadow: 0 10px 15px 0 rgba(174, 49, 14, 0.5);
+}
+
+input::placeholder {
+	color: #aaa;
+}
+
+#username {
+	margin-bottom: 10px;
+	width: 100%;
+	outline: none;
+}
+
+#end-text {
+	color: black;
+	text-align: center;
+}
+
+#saveScoreBtn {
+	border: none;
+}
+
+.fa-home {
+	margin-left: 5px;
+	font-size: 100%;
+	color: blue;
+}
+
 /* Screen Size > 500px */
 
 @media screen and (min-width: 500px) {
