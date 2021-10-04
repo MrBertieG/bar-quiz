@@ -94,8 +94,8 @@ nav {
 	flex-direction: column;
 	z-index: 3;
 	margin-top: 150%;
-	clip-path: circle(100px at 90% -12%);
-	-webkit-clip-path: (100px at 90% -12%);
+	clip-path: circle(100px at 90% -15%);
+	-webkit-clip-path: (100px at 90% -15%);
 	transition: all 1s ease-out;
 	pointer-events: none;
 }
@@ -415,6 +415,37 @@ a {
 
 .incorrect {
 	background: linear-gradient(32deg, rgb(red) 0%,rgb(rgb(255, 0, 0)) 100%);
+}
+
+/* Headsup Display */
+
+#hud {
+	display: flex;
+	justify-content: space-between;
+}
+
+.hud-prefix {
+	text-align: center;
+	font-size: 10px;
+}
+
+.hud-main-text {
+	text-align: center;
+}
+
+#progressBar {
+	width: 350px;
+	height: 15px;
+	border: 1px solid black;
+	margin-top: 10px;
+	border-radius: 50px;
+	overflow: hidden;
+}
+
+#progressBarFull {
+	height: 100%;
+	background-color: rgba(174, 49, 14, 1);
+	width: 0;
 }
 
 /* Screen Size > 500px */
