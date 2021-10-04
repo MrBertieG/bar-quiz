@@ -1,16 +1,16 @@
 const question = document.querySelector('#question');
-const choices = Array.from(document.querySelector('#question'));
+const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
 
 let currentQuestion ={};
 let acceptingAnswers = true;
-let score = 0 ;
+let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-let questionts = [
+let questions = [
     {
         question: 'What are the 3 main ingreadients of a Vodka Martini?',
         choice1: 'Vodka, lime, soda',
@@ -52,28 +52,32 @@ let questionts = [
         choice2: 'Just Water and Lime',
         choice3: 'Coffe Liqueure, Double Cream, Orange Liqueure',
         answer: 3,
-    },
-]
+    }
+];
 
 const score_points = 100;
-const max_questions = 4;
+const max_questions = 6;
 
-startgame = () => {
+startGame = () => {
     questionCounter = 0;
     score = 0;
-    availableQuestions = [...question];
-    getNewQuestions ();
+    availableQuestions = [...questions];
+    getNewQuestion();
 }
 
 //Keeping Track of the score
-getNewQuestions = () => {
+getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > max_questions) {
         localStorage.setItem('mostRecentScore', score);
-        return window.location.assign('/end.html')
+
+        //Will send user to the results page once the quiz has been completed.
+        return window.location.assign('/end.html');
     }
+
     //Question Counter
-    questionCounter++
-    progressText.innertext =`Question ${questionCounter} of ${max_questions}`;
+    questionCounter++;
+    progressText.innerText =`Question ${questionCounter} of ${max_questions}`;
+
     //Calculates the current question number the user is and adds the % in the loading bar
     progressBarFull.style.width = `${(questionCounter/max_questions) * 100}%`;
 
@@ -82,20 +86,21 @@ getNewQuestions = () => {
     question.innerText = currentQuestion.question;
 
     choices.forEach(choice => {
-        const number = choice.dataset['number']
+        const number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
     })
 
     availableQuestions.splice(questionsIndex, 1);
 
     acceptingAnswers = true;
-}
+};
 
-choices,forEach(choice => {
+choices.forEach(choice => {
     choice.addEventListener('click', e => {
         if(!acceptingAnswers) return
 
         acceptingAnswers = false;
+
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset['number'];
 
@@ -104,14 +109,21 @@ choices,forEach(choice => {
 
         //Increases the total score by 100 points if correct
         if(classToApply === 'correct') {
-            incrementScire(score_points)
-        }
+            incrementScore(score_points);
+        };
 
-        selectedChoice.parentElement.classList.addEventListener(classToApply);
+        selectedChoice.parentElement.classList.add(classToApply);
 
         setTimeout(() => {
-            selectedChoice.parentElement.parentElement.classList.remove(classToApply);
-        })
+            selectedChoice.parentElement.classList.remove(classToApply);
+            getNewQuestion()
+        }, 1000)
     })
-})
+});
 
+incrementScore = num => {
+    score +=num;
+    scoreText.innerText = score;
+};
+
+startGame();
