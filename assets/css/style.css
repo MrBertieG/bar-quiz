@@ -279,6 +279,10 @@ li.fade {
 	transform: translate(-50%, -50%) scale(1);
 }
 
+.game.active {
+	transform: translate(-50%, -50%) scale(1);
+}
+
 .rules-header {
 	display: flex;
 	padding: 10px 5px;
@@ -377,6 +381,17 @@ fieldset textarea {
 	cursor: pointer;
 }
 
+/* Popup Quiz box */
+.game {
+	transform: translate(-50%, -50%) scale(0);
+	position: fixed;
+	bottom: 25%;
+	height: 50%;
+	width: 90%;
+	margin: 0 auto;
+	transform: translate(6%, -1%);
+	background-color: cyan;
+}
 
 /* Footer */
 

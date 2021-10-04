@@ -74,16 +74,12 @@
             <div class="outer">
                   
                     <button type="submit" class="button1">Leave Feedback!</button>
-                    
-
                    
                     <button type="reset" class="button2">Clear</button>
                      
             </div>
         </form>
         
-       
-
         <!--Contact Information-->
         <div class="cont-info">
            <p>Tel: 01303 123 456 <br>
@@ -108,21 +104,9 @@
     
     </section>
     <section>
-        <div id="game" class="justify-center flex-column">
+        <div id="game" class="game active">
             <div id="hud">
-                <div class="hud-item">
-                    <p id="progressText" class="hud-prefix">
-                    question
-                    </p>
-                </div>
-                <div class="hud-item">
-                    <p class="hud-prefix">
-                        score
-                    </p>
-                    <h1 class="hud-mai-text" id="score">
-                        0
-                    </h1>
-                </div>
+                <button data-close-button class="x-btn">&times;</button>
             </div>
             <h1 id="question">What are the 3 main ingredietns of a vodka martini?</h1>
             <div class="choice-container">
@@ -140,6 +124,21 @@
             <div class="choice-container">
                 <p class="choice-prefix">D</p>
                 <p class="choice-text" data-number="4">Choice</p>
+            </div>
+
+            <div class="hud-item">
+                <p id="progressText" class="hud-prefix">
+                question
+                </p>
+            </div>
+            
+            <div class="hud-item">
+                <p class="hud-prefix">
+                    score
+                </p>
+                <h1 class="hud-mai-text" id="score">
+                    0
+                </h1>
             </div>
             <div id="progressBar">
                 <div id="progressBarFull"></div>

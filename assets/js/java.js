@@ -43,6 +43,25 @@ function closeRules(rules) {
   overlay.classList.remove('active');
 };
 
+// Start Selector
+const openStartquizButtons = document.querySelectorAll('[data-start-quiz-target]');
+const closeGameButtons = document.querySelectorAll('[data-close-button]');
+
+openStartquizButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const startQuiz = document.querySelector(button.dataset.startquizTarget);
+    openstartQuiz(startQuiz);
+  });
+});
+
+closeStartButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const start = button.closest('.start');
+    closeStart(start);
+  });
+});
+
+
 //Contact Selector
 const openContactButtons = document.querySelectorAll('[data-contact-target]');
 const closeContactButtons = document.querySelectorAll('[data-close-button]');
