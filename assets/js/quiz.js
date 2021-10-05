@@ -13,24 +13,27 @@ let availableQuestions = [];
 //Question Array
 let questions = [
     {
-        question: 'What are the 3 main ingreadients of a Vodka Martini?',
-        choice1: 'Vodka, lime, soda',
-        choice2: 'Vodka, Vermouth, ice',
-        choice3: 'Vodka, orange juice, lemonade',
+        question: 'What are the ingreadients of a Vodka Martini?',
+        choice1: 'Vodka, Lime and Soda',
+        choice2: 'Vodka, Vermouth and Ice',
+        choice3: 'Vodka, Orange Juice and Lemonade',
+        choice4: 'Vodka and Water',
         answer: 2,
     },
     {
         question: 'What is the main spirit in an Old Fashioned',
         choice1: 'Gin',
         choice2: 'Red Wine',
-        choice3: 'Whiskey',
+        choice3: 'Whiskey/Burbon',
+        choice4: 'Gin',
         answer: 3,
     },
     {
         question: 'What makes the cocktail Whiskey Sour a "sour" cocktail',
-        choice1: 'The lime',
-        choice2: 'The egg',
-        choice3: 'The type of whiskey',
+        choice1: 'The Lime',
+        choice2: 'The Egg White',
+        choice3: 'The type of Whiskey',
+        choice4: 'The Lime juice around the glass edge',
         answer: 2,
     },
     {
@@ -38,13 +41,15 @@ let questions = [
         choice1: 'Rum and Coke',
         choice2: 'Gin and Coke',
         choice3: 'Gin and Orange Juice',
+        choice4: 'Straight Rum served with a Cuban Cigar',
         answer: 1,
     },
     {
-        question: 'What is the main ingredient of a Sangria?',
+        question: 'What is the main ingredient in a Sangria cocktail?',
         choice1: 'Coke',
         choice2: 'Whte Wine',
-        choice3: 'red Wine',
+        choice3: 'Red Wine',
+        choice4: 'Oranges',
         answer: 3,
     },
     {
@@ -52,12 +57,46 @@ let questions = [
         choice1: 'Vodka and Baileys',
         choice2: 'Just Water and Lime',
         choice3: 'Coffe Liqueure, Double Cream, Orange Liqueure',
+        choice4: 'None of the above',
+        answer: 3,
+    },
+    {
+        question: 'What goes in White Russian?',
+        choice1: 'Vodka, Coffee Liqueure and Double Cream',
+        choice2: 'Whiskey, Orange Liqueure and Coke',
+        choice3: 'Coffe Liqueure, Double Cream, Orange Liqueure',
+        choice4: 'Tequila, Rum, Gin and Milk',
+        answer: 1,
+    },
+    {
+        question: 'What goes in a Cosmopolitan?',
+        choice1: 'Vodka, Triple Sec, Cranberry Juice and Lime Juice',
+        choice2: 'Gin, Cranberry Juice, Peach Schnapps and Sugar ',
+        choice3: 'Vodka and Pomegranate Juice',
+        choice4: 'None of the above',
+        answer: 1,
+    },
+    {
+        question: 'What goes in a Negroni?',
+        choice1: 'Rum and Coffe Liqueure',
+        choice2: 'Gin, Vermouth and Campari',
+        choice3: 'Pernod, Galliano and Prosecco',
+        choice4: 'Prosecco and Aperol',
+        answer: 2,
+    },
+    {
+        question: 'What goes in a Black Velvet?',
+        choice1: 'Vodka and Baileys',
+        choice2: 'Guiness and Blackcurrant',
+        choice3: 'Champagne and Stout in a floute glass',
+        choice4: 'Vodka, Soda and Tabasco',
         answer: 3,
     }
+
 ];
 
 const score_points = 100;
-const max_questions = 6;
+const max_questions = 10;
 
 //Game Function
 let startGame = () => {

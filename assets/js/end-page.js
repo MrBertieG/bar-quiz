@@ -3,6 +3,8 @@ const saveScoreBtn = document.querySelector('#saveScoreBtn');
 const finalScore = document.querySelector('#finalScore');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
 
+
+
 //This will be used for storing the names and scores
 const highScores = JSON.parse(localStorage.getItem('highScores')) || []
 
@@ -35,3 +37,5 @@ saveHighScore = e => {
     localStorage.setItem('highScores', JSON.stringify(highScores));
     window.location.assign('/');
 };
+
+//Displays message in relation of the final score
