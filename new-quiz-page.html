@@ -16,7 +16,7 @@
 
         <h1 id="title-logo">Bar Quiz!</h1>
 
-        <i class="fas fa-sign-out-alt fa-2x"></i>
+        <i class="fas fa-sign-out-alt fa-2x exit" id="exit" data-exit-target='#exit-container'></i>
         
         <!--Hamburger Menu-->
         <div class="hamburger">
@@ -46,7 +46,7 @@
 
         <div class="rules-list">
             <ol>
-                <li>You must answer all questions to finish the quiz</li> 
+                <li>You must answer all of the questions to finish the quiz</li> 
                 <li>You must select at least one answer to proceed to the next question</li>
             </ol>
         </div>
@@ -95,7 +95,7 @@
             <h2>In order to complete the test you must:</h2>
             <ol>
                 <li>Select at least one answer.</li>
-                <li>Answer all questions.</li>
+                <li>Answer all of the questions.</li>
                 <li>Do not use Google to search the answers.</li>
             </ol>
         </div>
@@ -127,7 +127,7 @@
 
             <div class="hud-item">
                 <p id="progressText" class="hud-prefix">
-                question
+                Question
                 </p>
             </div>
             <div id="progressBar">
@@ -135,13 +135,20 @@
             </div>
             <div class="hud-item">
                 <p class="hud-prefix">
-                    score
+                    Score
                 </p>
                 <h1 class="hud-main-text" id="score">
                     0
                 </h1>
             </div>
-           
+        </div>
+    
+        <div class="exit-container" id="exit-container">
+            <div class="exit">
+            <p>Are you sure you want to exit?</p>
+            <span class="yes"><a href="index.html">Yes</a></span>
+            <span class="no" data-close-button>No</span>
+        </div>
         </div>
     </section>
 

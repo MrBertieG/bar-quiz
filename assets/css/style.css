@@ -230,6 +230,7 @@ li.fade {
 	font-family: Exo, sans-serif;
 	background-color: rgb(223, 203, 192);
 	font-weight: 1000;
+	font-size: 25px;
 	width: 160px;
 	height: 40px;
 	position: fixed;
@@ -282,6 +283,10 @@ li.fade {
 .game.active {
 	transform: scale(1);
 	margin: 0 auto;
+}
+
+.exit-container.active {
+	transform: translate(-50%, -50%) scale(1);
 }
 
 .rules-header {
@@ -481,11 +486,11 @@ a {
 }
 
 .correct {
-	background: linear-gradient(32deg, rgb(green) 0%,rgb(16, 211, 65) 100%);
+	background: green;
 }
 
 .incorrect {
-	background: linear-gradient(32deg, rgb(red) 0%,rgb(rgb(255, 0, 0)) 100%);
+	background: red;
 }
 
 /* Headsup Display */
@@ -576,15 +581,71 @@ a {
 	text-align: center;
 }
 
+.exit-container {
+		transform: scale(0);
+		transition: 200ms ease-in-out;
+		position: fixed;
+		top: 25%;
+		right: 0;
+		bottom:0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		line-height: 45px;
+		height: 60%;
+		width: 95%;
+		margin: 0 auto;
+		border-radius: 5px;
+		font-family: Exo,sans-serif;
+		padding:0 5px 0 5px;
+		background-color: rgb(223, 203, 192);
+}
+
+.exit{
+	margin: auto;
+}
+
+.exit>p {
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 2px 5px 2px 5px;
+}
+
+.yes {
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 0 30px 0 30px;
+	cursor: pointer;
+}
+
+.yes:hover {
+	cursor: pointer;
+	box-shadow: 0 5px 10px 0 rgba(174, 49, 14, 0.5);
+	transform: scale(1.02);
+	transform: transform 100ms;
+}
+
+.no {
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 2px;
+	padding: 0 30px 0 30px;
+	cursor: pointer;
+}
+
+.no:hover {
+	cursor: pointer;
+	box-shadow: 0 5px 10px 0 rgba(174, 49, 14, 0.5);
+	transform: scale(1.02);
+	transform: transform 100ms;
+}
+
 /* Screen Size > 500px */
 
 @media screen and (min-width: 500px) {
-	html {
-		width: 75%;
-		margin: 0 auto;
-	}
 	nav {
-		width: 75%;
+		width: 100%;
 		overflow: hidden;
 		position: fixed;
 		z-index: 20;
@@ -626,6 +687,11 @@ a {
 	.choice-container {
 		min-width: 20px;
 	}
+
+	.exit-container {
+		width: 50%;
+	}
+}
 }
 
 /* Screen Size > 1250px */
@@ -639,10 +705,21 @@ a {
 		width: 60%;
 		margin-top: 0%;
 	}
+	#title-logo {
+		grid-column: 1;
+	}
 	#main-banner-container {
 		margin-top: 0;
 	}
 	.fa-glass-whiskey {
 		margin-top: 5px;
+	}
+
+	.game {
+		width: 57%;
+	}
+
+	.exit-container {
+		width: 80%;
 	}
 }
