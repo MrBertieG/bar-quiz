@@ -44,22 +44,36 @@ function closeRules(rules) {
 };
 
 // Start Selector
-const openStartquizButtons = document.querySelectorAll('[data-start-quiz-target]');
+const openGameButtons = document.querySelectorAll('[data-game-target]');
 const closeGameButtons = document.querySelectorAll('[data-close-button]');
 
-openStartquizButtons.forEach(button => {
+openGameButtons.forEach(button => {
   button.addEventListener('click', () => {
-    const startQuiz = document.querySelector(button.dataset.startquizTarget);
-    openstartQuiz(startQuiz);
+    const game = document.querySelector(button.dataset.gameTarget);
+    openGame(game);
   });
 });
 
-closeStartButtons.forEach(button => {
+function openGame(game) {
+  if(game == null) return
+  game.classList.add('active');
+  overlay.classList.add('active');
+};
+
+
+//Close Window
+closeGameButtons.forEach(button => {
   button.addEventListener('click', () => {
-    const start = button.closest('.start');
-    closeStart(start);
+    const game = button.closest('.game');
+    closeGame(game);
   });
 });
+
+function closeGame(game) {
+  if(game == null) return
+  game.classList.remove('active');
+  overlay.classList.remoce('active');
+};
 
 
 //Contact Selector
