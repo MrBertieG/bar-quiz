@@ -77,10 +77,9 @@ getNewQuestion = () => {
     }
 
     //Question Counter
+    //Calculates the current question number the user is and adds the % in the loading bar
     questionCounter++;
     progressText.innerText =`Question ${questionCounter} of ${max_questions}`;
-
-    //Calculates the current question number the user is and adds the % in the loading bar
     progressBarFull.style.width = `${(questionCounter/max_questions) * 100}%`;
 
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);

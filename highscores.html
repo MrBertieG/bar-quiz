@@ -71,29 +71,10 @@
                 <br>
             </fieldset>
             <div class="outer">
-                  
                     <button type="submit" class="button1">Leave Feedback!</button>
-                    
-
-                   
                     <button type="reset" class="button2">Clear</button>
-                     
             </div>
         </form>
-        
-        <section>
-            <div class="result-container">
-                <div id="end" class="flex-center flex-column">
-                    <h1 id="finalScore">0</h1>
-                    <form action="" class="end-form-container">
-                        <h2 id="end-text">Enter your name below to save your score</h2>
-                        <button type = "submit" class="btn-submit" id="saveScoreBtn">Save</button>
-                    </form>
-                    <a href="/new-quiz-page.html" class="btn-submit">Play Again</a>
-                    <a href="/index.html" class="btn-submit">Go Home</a>
-                </div>
-            </div>
-        </section>
 
         <!--Contact Information-->
         <div class="cont-info">
@@ -106,6 +87,16 @@
     <div class="overlay"></div>
     </section>
 
+    <section>
+        <div class="container">
+            <div id="highScores">
+                <h1 id="finalScore">Leaderboard</h1>
+                <ul id="highScoresList"></ul>
+                <a href="/" class="btn">Home</a>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
         <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a>
@@ -114,10 +105,10 @@
     </footer>
     
     <!--Java Script Files Link-->
-    <script src="assets/js/java.js"></script>
+    <script src="assets/js/animations.js"></script>
     <script src="assets/js/quiz.js"></script>
     <script src="assets/js/highscores.js"></script>
-    <script src="assets/js/end.js"></script>
+    <script src="assets/js/end-page.js"></script>
     <!--Font Awesome script-->
     <script src="https://kit.fontawesome.com/2ee9af80e1.js" crossorigin="anonymous"></script>
 </body>
