@@ -74,16 +74,10 @@
             <div class="outer">
                   
                     <button type="submit" class="button1">Leave Feedback!</button>
-                    
-
-                   
                     <button type="reset" class="button2">Clear</button>
-                     
             </div>
         </form>
-        
-       
-
+    
         <!--Contact Information-->
         <div class="cont-info">
            <p>Tel: 01303 123 456 <br>
@@ -93,6 +87,22 @@
 
     </div>
     <div class="overlay"></div>
+    </section>
+    <section>
+        <div class="container">
+            <div id="end">
+                <h1 id="finalScore">0</h1>
+                    <form class="end-form-container">
+                     <h2 id="end-text">Enter your Naame below to save your finalScore</h2>
+                     <input type="text" name="name" id="username" placeholder="Enter your name:">
+                    
+                    <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>Save</button>
+                </form>
+                <a href="/new-quiz-page.html" class="btn">Play Again</a>
+                <a href="/index.html" class="btn">Go Home</a>
+
+            </div>
+        </div>
     </section>
 
     <footer>
