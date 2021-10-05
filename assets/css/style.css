@@ -415,6 +415,27 @@ fieldset textarea {
 	border-bottom: 1px solid black;
 }
 
+/* End Page */
+.end-container {
+	transform: scale(1);
+	transition: 200ms ease-in-out;
+	position: fixed;
+	top: 25%;
+	right: 0;
+	bottom:0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	line-height: 45px;
+	height: fit-content;
+	width: 75%;
+	margin: 0 auto;
+	border-radius: 5px;
+	font-family: Exo,sans-serif;
+	padding:0 5px 0 5px;
+	background-color: rgb(223, 203, 192);
+}
 /* Footer */
 
 footer {
@@ -506,10 +527,11 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	max-width: 50px;
+	width: 100%;
+	max-width: 30rem;
 }
 
-input {
+.end-form-container>input {
 	margin-bottom: 10px;
 	width: 30px;
 	padding: 10px;
@@ -517,7 +539,7 @@ input {
 	box-shadow: 0 10px 15px 0 rgba(174, 49, 14, 0.5);
 }
 
-input::placeholder {
+.end-form-container>input::placeholder {
 	color: #aaa;
 }
 
@@ -530,16 +552,28 @@ input::placeholder {
 #end-text {
 	color: black;
 	text-align: center;
+	font-size: 110%;
+	line-height: 30px;
 }
 
 #saveScoreBtn {
-	border: none;
+	padding: 0 5px 0 5px;
+	margin-right: 7px;
+	border-radius: 5px;
+	cursor: pointer;
+	border: 1px solid black;
 }
 
-.fa-home {
-	margin-left: 5px;
-	font-size: 100%;
-	color: blue;
+.btn {
+	padding: 0 5px 0 5px;
+	margin-right: 7px;
+	border-radius: 5px;
+	cursor: pointer;
+	border: 1px solid black;
+}
+
+#finalScore {
+	text-align: center;
 }
 
 /* Screen Size > 500px */

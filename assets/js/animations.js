@@ -72,7 +72,7 @@ closeGameButtons.forEach(button => {
 function closeGame(game) {
   if(game == null) return
   game.classList.remove('active');
-  overlay.classList.remoce('active');
+  overlay.classList.remote('active');
 };
 
 

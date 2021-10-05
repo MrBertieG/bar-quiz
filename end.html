@@ -52,7 +52,7 @@
             </ol>
         </div>
     </div>
-
+ 
     <!--Contact window-->
     <div class="contact" id="contact">
         <div class="contact-header">
@@ -89,19 +89,17 @@
     <div class="overlay"></div>
     </section>
     <section>
-        <div class="container">
+        <div class="end-container">
             <div id="end">
                 <h1 id="finalScore">0</h1>
                     <form class="end-form-container">
-                     <h2 id="end-text">Enter your Naame below to save your finalScore</h2>
+                     <h2 id="end-text">Enter your Name below to save your final score:</h2>
                      <input type="text" name="name" id="username" placeholder="Enter your name:">
-                    
-                    <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>Save</button>
                 </form>
-                <a href="/new-quiz-page.html" class="btn">Play Again</a>
-                <a href="/index.html" class="btn">Go Home</a>
-
             </div>
+            <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>Save</button>
+            <a href="/new-quiz-page.html" class="btn">Play Again</a>
+            <a href="/index.html" class="btn">Go Home</a>
         </div>
     </section>
 
