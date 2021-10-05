@@ -31,17 +31,17 @@ closeRulesButtons.forEach(button => {
 
 function openRules(rules) {
   if (rules == null) 
-  return
+  return;
     rules.classList.add('active'),
     overlay.classList.add('active');
-  };
+  }
 
 function closeRules(rules) {
   if (rules == null) 
-  return 
+  return;
   rules.classList.remove('active'),
   overlay.classList.remove('active');
-};
+}
 
 // Start Selector
 const openGameButtons = document.querySelectorAll('[data-game-target]');
@@ -55,10 +55,10 @@ openGameButtons.forEach(button => {
 });
 
 function openGame(game) {
-  if(game == null) return
+  if(game == null) return;
   game.classList.add('active');
   overlay.classList.add('active');
-};
+}
 
 
 //Close Window
@@ -70,10 +70,10 @@ closeGameButtons.forEach(button => {
 });
 
 function closeGame(game) {
-  if(game == null) return
+  if(game == null) return;
   game.classList.remove('active');
-  overlay.classList.remote('active');
-};
+  overlay.classList.remove('active');
+}
 
 
 //Contact Selector
@@ -90,20 +90,20 @@ openContactButtons.forEach(button => {
 closeContactButtons.forEach(button => {
   button.addEventListener('click', () => {
     const contact = button.closest('.contact');
-    closeRules(contact);
+    closeContact(contact);
   });
 });
 
 function openContact(contact) {
   if (contact == null) 
-  return
+  return;
     contact.classList.add('active'),
     overlay.classList.add('active');
-  };
+  }
 
   function closeContact(contact) {
     if (contact == null) 
-    return 
+    return;
     contact.classList.remove('active'),
     overlay.classList.remove('active');
-  };
+  }

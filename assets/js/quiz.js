@@ -60,15 +60,15 @@ const score_points = 100;
 const max_questions = 6;
 
 //Game Function
-startGame = () => {
+let startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
     getNewQuestion();
-}
+};
 
 //Keeping Track of the score
-getNewQuestion = () => {
+let getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > max_questions) {
         localStorage.setItem('mostRecentScore', score);
 
@@ -89,7 +89,7 @@ getNewQuestion = () => {
     choices.forEach(choice => {
         const number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
-    })
+    });
 
     availableQuestions.splice(questionsIndex, 1);
 
@@ -98,7 +98,7 @@ getNewQuestion = () => {
 
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
-        if(!acceptingAnswers) return
+        if(!acceptingAnswers) return;
 
         acceptingAnswers = false;
 
@@ -111,18 +111,18 @@ choices.forEach(choice => {
         //Increases the total score by 100 points if correct
         if(classToApply === 'correct') {
             incrementScore(score_points);
-        };
+        }
         //Increase the score if true
         selectedChoice.parentElement.classList.add(classToApply);
 
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
-            getNewQuestion()
-        }, 1000)
-    })
+            getNewQuestion();
+        }, 1000);
+    });
 });
 
-incrementScore = num => {
+let incrementScore = num => {
     score +=num;
     scoreText.innerText = score;
 };
