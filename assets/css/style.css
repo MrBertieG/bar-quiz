@@ -192,6 +192,8 @@ li.fade {
 	left: 0;
 	margin: 0 auto;
 	border: 3px solid rgb(248, 231, 222);
+	pointer-events: all;
+	cursor: pointer;
 }
 
 
@@ -238,6 +240,7 @@ li.fade {
 	left: 0;
 	margin: 0 auto;
 	border: 3px solid rgb(248, 231, 222);
+	cursor: pointer;
 }
 
 .rules {
@@ -696,35 +699,6 @@ a {
 	}
 }
 
-/* Screen Size > 1250px */
-
-@media screen and (min-width: 1250px) {
-	html {
-		width: 60%;
-		margin: 0 auto;
-	}
-	nav {
-		width: 60%;
-		margin-top: 0%;
-	}
-	#title-logo {
-		grid-column: 1;
-	}
-	#main-banner-container {
-		margin-top: 0;
-	}
-	.fa-glass-whiskey {
-		margin-top: 5px;
-	}
-
-	.game {
-		width: 57%;
-	}
-
-	.exit-container {
-		width: 80%;
-	}
-}
 
 .cont-info {
 	float: left;
@@ -968,8 +942,22 @@ a {
 		width: 60%;
 		margin-top: 0%;
 	}
-	#title-logo {
-		grid-column: 1;
+	#main-intro {
+		width: 500px;
+		height: 280px;
+	}
+	#main-intro>h2 {
+		margin-top: 20%;
+	}
+	.go-btn {
+		width: 300px;
+		height: 60px;
+		font-size: 20px;
+	}
+	.start-quiz {
+		width: 300px;
+		height: 60px;
+		font-size: 20px;
 	}
 	#main-banner-container {
 		margin-top: 0;
@@ -979,10 +967,31 @@ a {
 	}
 
 	.game {
-		width: 57%;
+		width: 43%;
 	}
 
 	.exit-container {
 		width: 80%;
+	}
+	.description-box {
+		width: 500px;
+    	height: 280px;
+	}
+	.description-box li {
+		font-size: 24px;
+		padding-top: 29px;
+		padding-left: 6px;
+	}
+	}
+	ol {
+		font-size: 20px;
+	}
+	.nav-links {
+		font-size: 30px;
+	}
+	
+	.description-box h2 {
+		font-size: 165%;
+		padding: 5px 1px 5px 1px;
 	}
 }
