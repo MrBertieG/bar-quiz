@@ -97,14 +97,14 @@ nav {
 	z-index: 3;
 	margin-top: 150%;
 	clip-path: circle(100px at 90% -15%);
-	-webkit-clip-path: (100px at 90% -15%);
+	
 	transition: all 1s ease-out;
 	pointer-events: none;
 }
 
 .nav-links.open {
 	clip-path: circle(1000px at 90% -12%);
-	-webkit-clip-path: (100px at 90% -12%);
+	
 	pointer-events: all;
 }
 
@@ -619,7 +619,7 @@ a {
 	cursor: pointer;
 	box-shadow: 0 5px 10px 0 rgba(174, 49, 14, 0.5);
 	transform: scale(1.02);
-	: 100ms;
+	transition: 100ms;
 }
 
 /* End Quiz Page */
@@ -677,7 +677,7 @@ a {
 		z-index: 3;
 		margin-top: 150%;
 		clip-path: circle(100px at 90% -12%);
-		-webkit-clip-path: (100px at 90% -12%);
+		
 		transition: all 1s ease-out;
 		pointer-events: all;
 	}
@@ -724,8 +724,6 @@ a {
 	.exit-container {
 		width: 80%;
 	}
-}
-	border-radius: 5px;
 }
 
 .cont-info {
@@ -882,7 +880,7 @@ a {
 	cursor: pointer;
 	box-shadow: 0 5px 10px 0 rgba(174, 49, 14, 0.5);
 	transform: scale(1.02);
-	transform:  100ms;
+	transition:  100ms;
 }
 
 /* End Quiz Page */
@@ -940,7 +938,7 @@ a {
 		z-index: 3;
 		margin-top: 150%;
 		clip-path: circle(100px at 90% -12%);
-		-webkit-clip-path: (100px at 90% -12%);
+		
 		transition: all 1s ease-out;
 		pointer-events: all;
 	}
@@ -957,7 +955,6 @@ a {
 	.exit-container {
 		width: 50%;
 	}
-}
 }
 
 /* Screen Size > 1250px */
