@@ -198,6 +198,25 @@ li.fade {
 	font-weight: 800;
 	cursor: pointer;
 }
+.l-btn {
+	font-family: Exo, sans-serif;
+	background-color: rgb(223, 203, 192);
+	width: 160px;
+	height: 40px;
+	position: fixed;
+	top: 50%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
+	border: 3px solid rgb(248, 231, 222);
+	border-radius: 20px;
+	pointer-events: all;
+	font-size: 18px;
+	font-weight: 800;
+	cursor: pointer;
+}
+
 
 
 /* Quiz Page */
@@ -518,6 +537,26 @@ a {
 
 
 /* End Game Page */
+.end-container {
+	transform: scale(1);
+	transition: 200ms ease-in-out;
+	position: fixed;
+	top: 25%;
+	right: 0;
+	bottom:0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	line-height: 45px;
+	height: fit-content;
+	width: 75%;
+	margin: 0 auto;
+	border-radius: 5px;
+	font-family: Exo,sans-serif;
+	padding:0 5px 0 5px;
+	background-color: rgb(223, 203, 192);
+}
 .end-form-container {
 	display: flex;
 	flex-direction: column;
@@ -552,19 +591,23 @@ a {
 }
 
 #saveScoreBtn {
-	padding: 0 5px 0 5px;
-	margin-right: 7px;
 	border-radius: 5px;
 	cursor: pointer;
 	border: 1px solid black;
+	font-size: 19px;
+    font-family: exo, sans-serif;
+    color: rgb(174, 49, 14, 1);
+    margin: 7px;
+    padding: 7px;
 }
 
 .btn {
-	padding: 0 5px 0 5px;
-	margin-right: 7px;
+	padding: 7px;
+	margin: 7px;
 	border-radius: 5px;
 	cursor: pointer;
 	border: 1px solid black;
+	color: rgb(174, 49, 14, 1);
 }
 
 #finalScore {
@@ -632,26 +675,44 @@ a {
 }
 
 /* End Quiz Page */
-.end-container {
-	transform: scale(1);
-	transition: 200ms ease-in-out;
-	position: fixed;
-	top: 25%;
-	right: 0;
-	bottom:0;
-	left: 0;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	line-height: 45px;
-	height: fit-content;
-	width: 75%;
-	margin: 0 auto;
-	border-radius: 5px;
-	font-family: Exo,sans-serif;
-	padding:0 5px 0 5px;
+
+/* Leaderboard Page */
+.leader-container {
+	font-family: Exo, sans-serif;
 	background-color: rgb(223, 203, 192);
+	width: fit-content;
+	height: fit-content;
+	position: fixed;
+	top: 30%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
+	border: 3px solid rgb(248, 231, 222);
+	border-radius: 5px;
+	pointer-events: all;
+	font-size: 18px;
+	font-weight: 800;
+	cursor: pointer;
+	list-style-position: inside;
 }
+
+a.h-btn {
+	text-decoration: none;
+}
+
+.h-btn {
+	width: 100%;
+	justify-self: center;
+	margin: 10px;
+	cursor: pointer;
+}
+
+#highScoresList {
+	font-size: 30px;
+	margin: 10px;
+}
+
 
 /* Screen Size > 500px */
 
@@ -696,8 +757,13 @@ a {
 		justify-self: self-end;
 	}
 
-	.rules{
-		font-size: 10px;
+	ol {
+		font-size: 12;
+	}
+
+	.rules-list {
+		font-size: 20px;
+		line-height: 24px;
 	}
 
 	.choice-container {
@@ -728,10 +794,30 @@ a {
 		font-size: 30px;
 	}
 	.end-container {
-		height: 300px;
+		height: fit-content;
 		width: 500px;
 	}
+
+	.l-btn {
+		font-family: Exo, sans-serif;
+		background-color: rgb(223, 203, 192);
+		width: 160px;
+		height: 40px;
+		position: fixed;
+		top: 78%;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: 0 auto;
+		border: 3px solid rgb(248, 231, 222);
+		border-radius: 20px;
+		pointer-events: all;
+		font-size: 18px;
+		font-weight: 800;
+		cursor: pointer;
+	}
 }
+
 
 /* Screen Size > 1250px */
 

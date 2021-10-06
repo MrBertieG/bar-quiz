@@ -33,5 +33,5 @@ let saveHighScore = e => {
     highScores.splice(5);
 
     localStorage.setItem('highScores', JSON.stringify(highScores));
-    window.location.assign('/');
+    window.location.assign('https://8000-ivory-quokka-j4hyqdv6.ws-eu18.gitpod.io/highscores.html');
 };
