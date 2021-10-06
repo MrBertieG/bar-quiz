@@ -41,6 +41,12 @@ nav {
 	grid-column: 2;
 }
 
+.fa-home {
+	margin-top: 1%;
+	margin-left: 1%;
+	color: rgb(223, 203, 192);
+}
+
 .fa-cocktail {
 	margin-top: 1%;
 	margin-left: 1%;
@@ -192,29 +198,35 @@ li.fade {
 	left: 0;
 	margin: 0 auto;
 	border: 3px solid rgb(248, 231, 222);
-	border-radius: 20px;
+	border-radius: 10px;
 	pointer-events: all;
 	font-size: 18px;
 	font-weight: 800;
 	cursor: pointer;
 }
+a.l-btn {
+	text-decoration: none;
+}
 .l-btn {
 	font-family: Exo, sans-serif;
 	background-color: rgb(223, 203, 192);
+	color: black;
 	width: 160px;
-	height: 40px;
+	height: fit-content;
 	position: fixed;
-	top: 50%;
+	top: 59%;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	margin: 0 auto;
 	border: 3px solid rgb(248, 231, 222);
-	border-radius: 20px;
+	border-radius: 10px;
 	pointer-events: all;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 800;
 	cursor: pointer;
+	text-align: center;
+	padding: 1px;
 }
 
 
@@ -262,7 +274,7 @@ li.fade {
 	left: 0;
 	margin: 0 auto;
 	border: 3px solid rgb(248, 231, 222);
-	border-radius: 20px;
+	border-radius: 10px;
 	cursor: pointer;
 }
 
@@ -693,24 +705,41 @@ a {
 	pointer-events: all;
 	font-size: 18px;
 	font-weight: 800;
-	cursor: pointer;
 	list-style-position: inside;
 }
 
-a.h-btn {
-	text-decoration: none;
+#finalScore {
+	font-family: Oswald, sans-serif;
+	border-bottom: 1px solid black;
+	font-size: 30px;
+	text-align: center;
 }
 
 .h-btn {
-	width: 100%;
-	justify-self: center;
-	margin: 10px;
+	font-family: Exo, sans-serif;
+	background-color: rgb(223, 203, 192);
+	width: 160px;
+	height: 31px;
+	position: fixed;
+	top: 69%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
+	border: 3px solid rgb(248, 231, 222);
+	border-radius: 10px;
+	pointer-events: all;
+	font-size: 18px;
+	font-weight: 800;
 	cursor: pointer;
+	text-align: center;
+	color: black;
 }
 
 #highScoresList {
 	font-size: 30px;
 	margin: 10px;
+	line-height:45px;
 }
 
 
@@ -728,7 +757,7 @@ a.h-btn {
 	.hamburger {
 		display: none;
 	}
-	.fa-cocktail {
+	.fa-home {
 		margin-left: 7%;
 	}
 	.fa-sign-out-alt {
@@ -801,20 +830,23 @@ a.h-btn {
 	.l-btn {
 		font-family: Exo, sans-serif;
 		background-color: rgb(223, 203, 192);
+		color: black;
 		width: 160px;
-		height: 40px;
+		height: fit-content;
 		position: fixed;
-		top: 78%;
+		top: 59%;
 		right: 0;
 		bottom: 0;
 		left: 0;
 		margin: 0 auto;
 		border: 3px solid rgb(248, 231, 222);
-		border-radius: 20px;
+		border-radius: 10px;
 		pointer-events: all;
-		font-size: 18px;
+		font-size: 16px;
 		font-weight: 800;
 		cursor: pointer;
+		text-align: center;
+		padding: 1px;
 	}
 }
 
@@ -853,6 +885,10 @@ a.h-btn {
 	.fa-glass-whiskey {
 		margin-top: 5px;
 	}
+	.rules-list {
+		font-size: 20px;
+		line-height: 24px;
+	}
 
 	.game {
 		width: 43%;
@@ -870,8 +906,11 @@ a.h-btn {
 		padding-top: 29px;
 		padding-left: 6px;
 	}
+	.rules-title {
+		font-size: 18px;
+	}
 	ol {
-		font-size: 10px;
+		font-size: 18px;
 	}
 	.nav-links {
 		font-size: 30px;
