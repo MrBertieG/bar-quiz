@@ -10,7 +10,7 @@ html {
 	background-color: rgb(223, 203, 192);
 }
 
-/* Navigation Bar */
+/* Navigation Bar Start*/
 nav {
 	overflow: hidden;
 	position: relative;
@@ -62,8 +62,9 @@ nav {
 	grid-column: 3;
 	justify-self: right;
 }
+/* Navigation Bar Finish*/
 
-/* Hamburger Menu */
+/* Hamburger Menu Start */
 .line {
 	width: 30px;
 	height: 3px;
@@ -79,8 +80,9 @@ nav {
 	transform: translate(-5%, 50%);
 	z-index: 10;
 }
+/* Hamburger Menu Finish */
 
-/* Menu Window Open */
+/* Open Animation Background*/
 .nav-links {
 	display: flex;
 	list-style: none;
@@ -100,15 +102,10 @@ nav {
 	pointer-events: none;
 }
 
-/* Open Effect Background*/
 .nav-links.open {
 	clip-path: circle(1000px at 90% -12%);
 	-webkit-clip-path: (100px at 90% -12%);
 	pointer-events: all;
-}
-
-.landing {
-	flex-direction: column;
 }
 
 .nav-links li {
@@ -121,7 +118,7 @@ nav {
 }
 
 
-/* Fade Effect */
+/* Fade Animation */
 .nav-links li:nth-child(1) {
 	transition: all 0.5s ease 0.2s;
 }
@@ -199,7 +196,7 @@ li.fade {
 
 
 /* Quiz Page */
-/* Rules + Contact Window Animation*/
+/* Rules + Contact+ Start Window Animation*/
 
 	.description-box {
 	background-color: rgb(223, 203, 192);
@@ -226,6 +223,7 @@ li.fade {
 		list-style-position: inside;
 		padding-top: 11px;
 	}
+
 .start-quiz {
 	font-family: Exo, sans-serif;
 	background-color: rgb(223, 203, 192);
@@ -272,6 +270,30 @@ li.fade {
 	font-family: Exo, sans-serif;
 }
 
+
+/* Popup Quiz box */
+.game {
+	transform: scale(0);
+	transition: 200ms ease-in-out;
+	position: fixed;
+	top: 25%;
+	right: 0;
+	bottom:0;
+	left: 0;
+	height: fit-content;
+	width: 75%;
+	margin: 0 auto;
+	border-radius: 5px;
+	font-family: Exo,sans-serif;
+	padding:0 5px 0 5px;
+	background-color: rgb(223, 203, 192);
+}
+
+#question {
+	border-bottom: 1px solid black;
+}
+
+/* Window Activation */
 .rules.active {
 	transform: translate(-50%, -50%) scale(1);
 }
@@ -310,7 +332,7 @@ li.fade {
 	padding-left: 25px;
 }
 
-/* Close X Button */
+/* Close X Button Animation*/
 .rules-header .x-btn {
 	cursor: pointer;
 	border: none;
@@ -338,124 +360,6 @@ li.fade {
 	font-weight: bold;
 	position: relative;
 	left: 90%;
-}
-
-/* Overlay effect */
-.overlay {
-	position: fixed;
-	opacity: 0;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(174, 49, 14, 1);
-	pointer-events: none;
-	z-index: 10;
-}
-
-.overlay.active {
-	opacity: 1;
-	pointer-events: all;
-}
-
-/* Contact Form */
-fieldset input {
-	padding-left: 5px;
-	border-radius: 5px;
-}
-
-fieldset {
-	padding-left: 5px;
-}
-
-fieldset textarea {
-	width: 98%;
-	padding-left: 5px;
-	border-radius: 5px;
-}
-
-.cont-info {
-	float: left;
-	font-size: 100%;
-	padding-left: 5px;
-	font-family: Exo, sans-serif;
-	margin-top: 5%;
-}
-
-.button1 {
-	float: left;
-	padding: 0 5px 0 5px;
-	margin-left: 7px;
-	border-radius: 5px;
-	cursor: pointer;
-}
-
-.button2 {
-	float: right;
-	padding: 0 5px 0 5px;
-	margin-right: 7px;
-	border-radius: 5px;
-	cursor: pointer;
-}
-
-/* Popup Quiz box */
-.game {
-	transform: scale(0);
-	transition: 200ms ease-in-out;
-	position: fixed;
-	top: 25%;
-	right: 0;
-	bottom:0;
-	left: 0;
-	height: fit-content;
-	width: 75%;
-	margin: 0 auto;
-	border-radius: 5px;
-	font-family: Exo,sans-serif;
-	padding:0 5px 0 5px;
-	background-color: rgb(223, 203, 192);
-}
-
-#question {
-	border-bottom: 1px solid black;
-}
-
-/* End Page */
-.end-container {
-	transform: scale(1);
-	transition: 200ms ease-in-out;
-	position: fixed;
-	top: 25%;
-	right: 0;
-	bottom:0;
-	left: 0;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	line-height: 45px;
-	height: fit-content;
-	width: 75%;
-	margin: 0 auto;
-	border-radius: 5px;
-	font-family: Exo,sans-serif;
-	padding:0 5px 0 5px;
-	background-color: rgb(223, 203, 192);
-}
-/* Footer */
-
-footer {
-	text-align: center;
-	margin-top: 5%;
-}
-
-footer>a>i {
-	margin-left: 8%;
-	margin-right: 8%;
-}
-
-a {
-	text-decoration: none;
-	color: rgb(174, 49, 14);
 }
 
 /* Quiz Questionare */
@@ -526,6 +430,83 @@ a {
 	background-color: rgba(174, 49, 14, 1);
 	width: 0;
 }
+
+/* Overlay Animation */
+.overlay {
+	position: fixed;
+	opacity: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(174, 49, 14, 1);
+	pointer-events: none;
+	z-index: 10;
+}
+
+.overlay.active {
+	opacity: 1;
+	pointer-events: all;
+}
+
+/* Contact Form */
+fieldset input {
+	padding-left: 5px;
+	border-radius: 5px;
+}
+
+fieldset {
+	padding-left: 5px;
+}
+
+fieldset textarea {
+	width: 98%;
+	padding-left: 5px;
+	border-radius: 5px;
+}
+
+.cont-info {
+	float: left;
+	font-size: 100%;
+	padding-left: 5px;
+	font-family: Exo, sans-serif;
+	margin-top: 5%;
+}
+
+.button1 {
+	float: left;
+	padding: 0 5px 0 5px;
+	margin-left: 7px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.button2 {
+	float: right;
+	padding: 0 5px 0 5px;
+	margin-right: 7px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+
+/* Footer */
+footer {
+	text-align: center;
+	margin-top: 5%;
+}
+
+footer>a>i {
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(174, 49, 14);
+}
+
+
 
 /* End Game Page */
 .end-form-container {
@@ -639,6 +620,28 @@ a {
 	box-shadow: 0 5px 10px 0 rgba(174, 49, 14, 0.5);
 	transform: scale(1.02);
 	transform: transform 100ms;
+}
+
+/* End Quiz Page */
+.end-container {
+	transform: scale(1);
+	transition: 200ms ease-in-out;
+	position: fixed;
+	top: 25%;
+	right: 0;
+	bottom:0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	line-height: 45px;
+	height: fit-content;
+	width: 75%;
+	margin: 0 auto;
+	border-radius: 5px;
+	font-family: Exo,sans-serif;
+	padding:0 5px 0 5px;
+	background-color: rgb(223, 203, 192);
 }
 
 /* Screen Size > 500px */
