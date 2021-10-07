@@ -67,6 +67,7 @@ nav {
 	top: 10px;
 	grid-column: 3;
 	justify-self: right;
+	cursor: pointer;
 }
 /* Navigation Bar Finish*/
 
@@ -804,7 +805,7 @@ a {
 	}
 
 	.start-quiz {
-		top: 59%;
+		top: 63%;
 	}
 
 	.description-box {
@@ -834,7 +835,7 @@ a {
 		width: 160px;
 		height: fit-content;
 		position: fixed;
-		top: 59%;
+		top: 63%;
 		right: 0;
 		bottom: 0;
 		left: 0;

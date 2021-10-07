@@ -100,29 +100,29 @@ function openContact(contact) {
   return;
     contact.classList.add('active'),
     overlay.classList.add('active');
-  }
+  };
 
   function closeContact(contact) {
     if (contact == null) 
     return;
     contact.classList.remove('active'),
     overlay.classList.remove('active');
-  }
+  };
 
 // Exit button
 const openExitButtons = document.querySelectorAll('[data-exit-target]');
-const closeexitButtons = document.querySelectorAll('[data-close-button]');
+const closeExitButtons = document.querySelectorAll('[data-close-i]');
 
-openExittButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const exit = document.querySelector(button.dataset.exitTarget);
+openExitButtons.forEach(i => {
+  i.addEventListener('click', () => {
+    const exit = document.querySelector(i.dataset.exitTarget);
     openExit(exit);
   });
 });
 
-closeExitButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const exit = button.closest('.exit');
+closeExitButtons.forEach(span => {
+  span.addEventListener('click', () => {
+    const exit = span.closest('.exit-container');
     closeExit(exit);
   });
 });
@@ -132,11 +132,11 @@ function openExit(exit) {
   return;
     exit.classList.add('active'),
     overlay.classList.add('active');
-  }
+  };
 
   function closeExit(exit) {
     if (exit == null) 
     return;
     exit.classList.remove('active'),
     overlay.classList.remove('active');
-  }
+  };
