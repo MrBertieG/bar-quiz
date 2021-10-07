@@ -297,8 +297,8 @@ a.l-btn {
 
 .contact {
 	position: fixed;
-	top: 40%;
-	left: 50%;
+	top: 20%;
+	left: 9%;
 	transform: translate(-50%, -50%) scale(0);
 	transition: 200ms ease-in-out;
 	border: 1px solid black;
@@ -306,7 +306,7 @@ a.l-btn {
 	z-index: 11;
 	background-color: rgb(223, 203, 192);
 	height: 450px;
-	width: 380px;
+	width: 300px;
 	font-family: Exo, sans-serif;
 	font-weight: bolder;
 }
@@ -328,6 +328,7 @@ a.l-btn {
 	font-family: Exo,sans-serif;
 	padding:0 5px 0 5px;
 	background-color: rgb(223, 203, 192);
+	z-index: 11;
 }
 
 #question {
@@ -340,7 +341,7 @@ a.l-btn {
 }
 
 .contact.active {
-	transform: translate(-50%, -50%) scale(1);
+	transform: scale(1);
 }
 
 .game.active {
@@ -351,6 +352,7 @@ a.l-btn {
 
 .exit-container.active {
 	transform: scale(1);
+	z-index: 20;
 }
 
 .rules-header {
@@ -457,7 +459,7 @@ a.l-btn {
 }
 
 #progressBar {
-	width: 269px;
+	width: 231px;
 	height: 15px;
 	border: 1px solid black;
 	margin-top: 10px;
@@ -632,7 +634,7 @@ a {
 		transform: scale(0);
 		transition: 200ms ease-in-out;
 		position: fixed;
-		top: 25%;
+		top: 17%;
 		right: 0;
 		bottom:0;
 		left: 0;
@@ -647,6 +649,7 @@ a {
 		font-family: Exo,sans-serif;
 		padding:0 5px 0 5px;
 		background-color: rgb(223, 203, 192);
+		border: 1px solid black;
 }
 
 .exit{
@@ -803,6 +806,13 @@ a {
 
 	.exit-container {
 		width: 50%;
+		top: 24%;
+	}
+	#main-intro {
+		width: 350px;
+	}
+	.contact {
+		left: 37%;
 	}
 
 	.start-quiz {
