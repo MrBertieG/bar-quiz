@@ -328,7 +328,7 @@ a.l-btn {
 	font-family: Exo,sans-serif;
 	padding:0 5px 0 5px;
 	background-color: rgb(223, 203, 192);
-	z-index: 11;
+	z-index: 10;
 }
 
 #question {
@@ -816,7 +816,7 @@ a {
 	}
 
 	.start-quiz {
-		top: 67%;
+		top: 64%;
 	}
 
 	.description-box {
@@ -849,7 +849,7 @@ a {
 		left: 0;
 		margin: 0 auto;
 		border: 3px solid rgb(248, 231, 222);
-		border-radius: 10px;
+		border-radius: 7px;
 		pointer-events: all;
 		font-size: 16px;
 		font-weight: 800;
@@ -904,7 +904,7 @@ a {
 	}
 
 	.exit-container {
-		width: 80%;
+		width: 54%;
 	}
 	.description-box {
 		width: 500px;

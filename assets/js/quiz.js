@@ -21,7 +21,7 @@ let questions = [
         answer: 2,
     },
     {
-        question: 'What is the main spirit in an Old Fashioned',
+        question: 'What is the main spirit in an Old Fashioned?',
         choice1: 'Gin',
         choice2: 'Red Wine',
         choice3: 'Whiskey/Burbon',
@@ -29,7 +29,7 @@ let questions = [
         answer: 3,
     },
     {
-        question: 'What makes the cocktail Whiskey Sour a "sour" cocktail',
+        question: 'What makes the cocktail Whiskey Sour a "sour" cocktail?',
         choice1: 'The Lime',
         choice2: 'The Egg White',
         choice3: 'The type of Whiskey',
