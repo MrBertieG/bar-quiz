@@ -47,7 +47,7 @@ let questions = [
     {
         question: 'What is the main ingredient in a Sangria cocktail?',
         choice1: 'Coke',
-        choice2: 'Whte Wine',
+        choice2: 'White Wine',
         choice3: 'Red Wine',
         choice4: 'Oranges',
         answer: 3,
