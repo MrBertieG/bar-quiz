@@ -10,7 +10,7 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-//Question Array
+//Questions Array/list
 let questions = [
     {
         question: 'What are the ingreadients of a Vodka Martini?',
@@ -95,11 +95,12 @@ let questions = [
 
 ];
 
+//Scoring system and max questions number
 const score_points = 100;
 const max_questions = 10;
 
-//Game Function
-let startGame = () => {
+//Quiz Functions begining score count 0
+let startQuiz = () => {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
@@ -115,8 +116,11 @@ let getNewQuestion = () => {
         return window.location.assign('/end.html');
     }
 
-    //Question Counter
-    //Calculates the current question number the user is and adds the % in the loading bar
+    /*
+    *Question Counter
+    *Calculates the current question number the user is on 
+    *and adds the % in the loading bar at the same time
+    */
     questionCounter++;
     progressText.innerText =`Question ${questionCounter} of ${max_questions}`;
     progressBarFull.style.width = `${(questionCounter/max_questions) * 100}%`;
@@ -160,10 +164,10 @@ choices.forEach(choice => {
         }, 1000);
     });
 });
-
+//Adds 100 to the score if correct
 let incrementScore = num => {
     score +=num;
     scoreText.innerText = score;
 };
 
-startGame();
+startQuiz();

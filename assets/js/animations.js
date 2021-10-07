@@ -32,14 +32,14 @@ closeRulesButtons.forEach(button => {
 function openRules(rules) {
   if (rules == null) 
   return;
-    rules.classList.add('active'),
+    rules.classList.add('active');
     overlay.classList.add('active');
   }
 
 function closeRules(rules) {
   if (rules == null) 
   return;
-  rules.classList.remove('active'),
+  rules.classList.remove('active');
   overlay.classList.remove('active');
 }
 
@@ -98,16 +98,16 @@ closeContactButtons.forEach(button => {
 function openContact(contact) {
   if (contact == null) 
   return;
-    contact.classList.add('active'),
+    contact.classList.add('active');
     overlay.classList.add('active');
-  };
+  }
 
   function closeContact(contact) {
     if (contact == null) 
     return;
-    contact.classList.remove('active'),
+    contact.classList.remove('active');
     overlay.classList.remove('active');
-  };
+  }
 
 // Exit button
 const openExitButtons = document.querySelectorAll('[data-exit-target]');
@@ -130,13 +130,13 @@ closeExitButtons.forEach(span => {
 function openExit(exit) {
   if (exit == null) 
   return;
-    exit.classList.add('active'),
+    exit.classList.add('active');
     overlay.classList.add('active');
-  };
+  }
 
   function closeExit(exit) {
     if (exit == null) 
     return;
-    exit.classList.remove('active'),
+    exit.classList.remove('active');
     overlay.classList.remove('active');
-  };
+  }
