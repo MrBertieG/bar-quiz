@@ -251,6 +251,7 @@ a.l-btn {
 	}
 
 	.description-box h2 {
+		padding: 10px 10px;
 		font-size: 120%;
 		border-bottom: 1px solid black;
 		
@@ -349,7 +350,7 @@ a.l-btn {
 }
 
 .exit-container.active {
-	transform: translate(-50%, -50%) scale(1);
+	transform: scale(1);
 }
 
 .rules-header {
@@ -544,7 +545,7 @@ footer>a>i {
 
 a {
 	text-decoration: none;
-	color: rgb(174, 49, 14);
+	color: black;
 }
 
 
@@ -788,7 +789,7 @@ a {
 	}
 
 	ol {
-		font-size: 12;
+		font-size: 14px;
 	}
 
 	.rules-list {
@@ -805,7 +806,7 @@ a {
 	}
 
 	.start-quiz {
-		top: 63%;
+		top: 67%;
 	}
 
 	.description-box {
@@ -816,9 +817,6 @@ a {
 		font-size: 24px;
 		padding-top: 29px;
 		padding-left: 6px;
-	}
-	ol {
-		font-size: 10px;
 	}
 	.nav-links {
 		font-size: 30px;
