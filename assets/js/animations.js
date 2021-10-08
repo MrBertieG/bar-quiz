@@ -10,18 +10,18 @@ hamburger.addEventListener('click', () => {
   });
 });
 
-//Rules Selector
 const openRulesButtons = document.querySelectorAll('[data-rules-target]');
 const closeRulesButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementsByClassName('overlay');
 
+//Rules Animation Window
 openRulesButtons.forEach(button => {
   button.addEventListener('click', () => {
     const rules = document.querySelector(button.dataset.rulesTarget);
     openRules(rules);
   });
 });
-
+//Close Rules Window
 closeRulesButtons.forEach(button => {
   button.addEventListener('click', () => {
     const rules = button.closest('.rules');
@@ -34,7 +34,7 @@ function openRules(rules) {
   return;
     rules.classList.add('active');
     overlay.classList.add('active');
-  }
+}
 
 function closeRules(rules) {
   if (rules == null) 
@@ -43,10 +43,10 @@ function closeRules(rules) {
   overlay.classList.remove('active');
 }
 
-// Start Selector
+// Start Quiz Animation Window
 const openGameButtons = document.querySelectorAll('[data-game-target]');
 const closeGameButtons = document.querySelectorAll('[data-close-button]');
-
+//Close Quiz Window
 openGameButtons.forEach(button => {
   button.addEventListener('click', () => {
     const game = document.querySelector(button.dataset.gameTarget);
@@ -62,7 +62,6 @@ function openGame(game) {
 }
 
 
-//Close Window
 closeGameButtons.forEach(button => {
   button.addEventListener('click', () => {
     const game = button.closest('.game');
@@ -77,7 +76,7 @@ function closeGame(game) {
 }
 
 
-//Contact Selector
+//Contact Animation Window
 const openContactButtons = document.querySelectorAll('[data-contact-target]');
 const closeContactButtons = document.querySelectorAll('[data-close-button]');
 
@@ -87,7 +86,7 @@ openContactButtons.forEach(button => {
     openContact(contact);
   });
 });
-
+//Close Contact Window
 closeContactButtons.forEach(button => {
   button.addEventListener('click', () => {
     const contact = button.closest('.contact');
@@ -100,16 +99,16 @@ function openContact(contact) {
   return;
     contact.classList.add('active');
     overlay.classList.add('active');
-  }
+}
 
-  function closeContact(contact) {
-    if (contact == null) 
-    return;
-    contact.classList.remove('active');
-    overlay.classList.remove('active');
-  }
+function closeContact(contact) {
+  if (contact == null) 
+  return;
+  contact.classList.remove('active');
+  overlay.classList.remove('active');
+}
 
-// Exit button
+// Exit button Animation
 const openExitButtons = document.querySelectorAll('[data-exit-target]');
 const closeExitButtons = document.querySelectorAll('[data-close-i]');
 
@@ -119,7 +118,7 @@ openExitButtons.forEach(i => {
     openExit(exit);
   });
 });
-
+//Close Exit Window
 closeExitButtons.forEach(span => {
   span.addEventListener('click', () => {
     const exit = span.closest('.exit-container');
@@ -132,11 +131,11 @@ function openExit(exit) {
   return;
     exit.classList.add('active');
     overlay.classList.add('active');
-  }
+}
 
-  function closeExit(exit) {
-    if (exit == null) 
-    return;
-    exit.classList.remove('active');
-    overlay.classList.remove('active');
-  }
+function closeExit(exit) {
+  if (exit == null) 
+  return;
+  exit.classList.remove('active');
+  overlay.classList.remove('active');
+}

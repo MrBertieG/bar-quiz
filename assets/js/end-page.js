@@ -22,7 +22,7 @@ username.addEventListener('keyup', () => {
 * will appear if the quiz is taken multiple times
 * will also prevent the Save button working if no username inputed
 */
-let saveHighScore = q => {
+saveHighScoreBtn = q => {
     q.preventDefault ();
 
     const score = {
