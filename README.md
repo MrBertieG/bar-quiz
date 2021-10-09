@@ -47,7 +47,7 @@ Bar Quiz is an interractive werbsite designed to engage with users and test thei
 
 
 ## <a name="features">2. Features</a>
-[Index](#top)
+[Top of the page](#top)
 ### Navigation ![Navigation bar](assets/images/readme_img/nav_bar.png)
 - The navigation bar has four different versions depending on which page the user is on, and on what size screen the user is using. 
 
@@ -77,18 +77,53 @@ In screens bigger than 500px the nav bar menu has a animation effect where text 
 <br/><br/>
 
 ### Home Page
+<br>
 
+Both Mobile and Desktop consit in having the following:
+-  Header with the title of the website. 
+- An introduction box with a brief description. 
+- A link to the highest score users under the button "Top 5 Tom Cruises". 
+- A "Go to Quiz" button which will take the user to the quiz page.
+- A footer containing four social media links which open in individual pages 
+<br>
+Mobile<br>
+![Mobile Home Page](assets/images/readme_img/mobile_home.png)
+<br>
 
+Desktop<br>
+![Desktop Home Page](assets/images/readme_img/desktop_home.png)
 
-[Index](#top)
+<br><br>
+
+### Quiz Page
+
+Both Mobile and Desktop contain similar features such as a description box with the rules of the quiz, a button which allows the user to take the test and the footer with the social media links. There a re a few differences between Mobile and Desktop.
+
+Mobile <br>
+![Bobile Quiz Intro](assets/images/readme_img/mobile_quiz1.png)
+<br>
+In the mobile version a menu bar appears on the right top corner of the page. This allows top user to see the 3 different options presented to them via an overlay animation effect. These 3 options are:
+- Rules
+    - When clicked a popup window appears with the rules of the quiz.
+    - To exit the window the user can click the X symbol.
+![Mobile Rules](assets/images/readme_img/mobile_rules.png) <br>
+<br>
+- Start 
+    - The user can start the quiz from here as well. 
+    - The quiz can be closed via the X button but no warning will be shown here.
+![Mobile Menu Quiz](assets/images/readme_img/mobile_rules.png)  
+<br>
+- Contact
+    - The user can open the contact window and enter any feedback.
+    - The contact window can be close via the X button. 
+![Mobile Contact Window](assets/images/readme_img/mobile_contact.png) <br>
+[Top of the page](#top)
 
 ### Header ![The Header picture](assets/images/readme_img/header_intro.png)
 
 
 
-<br/><br/>
-
-[Index](#top)
+[Top of the page](#top)
 
 ### External Links Section ![Links Section Image](assets/images/readme_img/Links_Section.png)
 
@@ -107,7 +142,7 @@ In screens bigger than 500px the nav bar menu has a animation effect where text 
 
 <br><br>
 
-[Index](#top)
+[Top of the page](#top)
 
 ### Town Tour
 
