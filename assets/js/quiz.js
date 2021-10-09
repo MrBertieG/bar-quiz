@@ -113,7 +113,7 @@ let getNewQuestion = () => {
         localStorage.setItem('mostRecentScore', score);
 
         //Will send user to the results page once the quiz has been completed.
-        return window.location.assign('/end.html');
+        return window.location.assign('end.html');
     }
 
     /*
