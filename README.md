@@ -117,6 +117,26 @@ In the mobile version a menu bar appears on the right top corner of the page. Th
     - The user can open the contact window and enter any feedback.
     - The contact window can be close via the X button. 
 ![Mobile Contact Window](assets/images/readme_img/mobile_contact.png) <br>
+<br><br>
+Desktop <br>
+In the desktop version the hamburger menu has now disapeared and been replaced with 3 navigation links that animate when the page first loads. The links have the same functions as in the mobile version with the exception of the cursor being a pointer and a hover effect. <br>
+![Desktop Quiz](assets/images/readme_img/desktop_quiz1.png) <br>
+
+- Exit Button<br>
+Both in Mobile and desktop the exit button appears if the user presses the symbol. If the user chooses "Yes" then the home page will relload. If the user chooses "No" then the window will close and the user can carry on.<br>
+![Exit Window Button](assets/images/readme_img/exit.png)<br><br>
+
+The Quiz <br>
+Mobile Version <br>
+When the user clickes "Take Test" button the below window will appear. <br>
+The user will then be presented with a question and four options. If the user clickes the correct answer then the question will highlight green, the Score will increase by 100 points and the next question will load. <br>
+If the usser selects the wrong answer then no point will be assigned, the next question will load and the answer will turn red. <br>
+If the user decides to close the quiz window then they can choose to do so by clicking the X button, however the quiz will still be were it was left if the user then decised to carry on with the quiz just by simply clicking "Take Test" again and the quiz will reappear. <br>
+If the user wishes to exit at any stage then they can press the exit symbol. At this stage the page will reload and the progress will be lost.
+![Mobile Quiz](assets/images/readme_img/mobile_quiz_start.png)<br>
+![Mobile Exit Quiz](assets/images/readme_img/exit_quiz.png)<br>
+
+At the end of the quiz 
 [Top of the page](#top)
 
 ### Header ![The Header picture](assets/images/readme_img/header_intro.png)
