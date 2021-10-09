@@ -1,4 +1,4 @@
-#Welcome to Bar Quiz Website
+# Welcome to Bar Quiz Website
 
 ## Introduction
 
@@ -16,7 +16,11 @@ Bar Quiz is an interractive werbsite designed to engage with users and test thei
 - Navigation Bar
 - Home Page
 - Quiz Page
+- End Page
 - Leaderboard Page
+- Social Media Links
+- Rules Window
+- Contact Window
 ### [3. Wireframe](#wireframe)
 ### [4. Deployment](#deployment)
 ### [5. Manual Testing](#manual-testing)
@@ -25,7 +29,7 @@ Bar Quiz is an interractive werbsite designed to engage with users and test thei
 ### [8. Credits](#credits)
 
 <br><br>
-[Index](#top)
+[Top of the page](#top)
 
 ## <a name="user-ex">1. User Experience</a>
 
@@ -45,23 +49,36 @@ Bar Quiz is an interractive werbsite designed to engage with users and test thei
 ## <a name="features">2. Features</a>
 [Index](#top)
 ### Navigation ![Navigation bar](assets/images/readme_img/nav_bar.png)
-- The navigation bar has four different versions depending on which page the user is and on what size screen the user is using. 
+- The navigation bar has four different versions depending on which page the user is on, and on what size screen the user is using. 
 
-Mobile Home Page
+Mobile Home Page <br>
 ![Nav bar home page mobile](assets/images/readme_img/mobile_home_nav.png)
 
-Mobile Quiz Page
+Mobile Quiz Page<br>
 ![nav bar quiz page mobile](assets/images/readme_img/mobile_quiz_nav.png)
 
-Mobile Leaderboard and End Page 
-![Nav bar leaderboard and end page mobile](assets/images/readme_img/mobile_leaderboard_nav.png)
-
-Mobile Overlay Effect when pressint the menu
+Mobile Overlay Effect when pressing the menu<br>
 ![Overlay On](assets/images/readme_img/mobile_overlay_nav.png)
 
-- In screens bigger than 500px the nav bar menu has a animation effect where text increases size and changes colour. 
+Mobile Exit Button With Window <br>
+![Exit Button](assets/images/readme_img/mobile_exit_popup.png)
+<br>
+User can decide if they wish to exit the page they are in by clicking the exit button. This will take them to the main home page.
+<br><br>
+
+Mobile Leaderboard and End Page <br>
+![Nav bar leaderboard and end page mobile](assets/images/readme_img/mobile_leaderboard_nav.png)
+<br>
+The reason why no menu option is offered here is because the user has the options presented to them in the Leaderboard page as a button. 
+
+Big Screen Quiz Page
 ![Big Screen Nav](assets/images/readme_img/big_screen_nav.png)
+In screens bigger than 500px the nav bar menu has a animation effect where text increases size and changes colour. 
 <br/><br/>
+
+### Home Page
+
+
 
 [Index](#top)
 
