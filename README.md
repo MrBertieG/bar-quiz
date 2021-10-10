@@ -179,7 +179,7 @@ For Desktop sites simply select the category from the navigation bar.
 
 [Top of the page](#top)
 
-### Wireframe 
+### 3. Wireframe 
 
 - The website's skeleton was designed using Balsamiq
 - Three versions were designed: Mobile, Tablet and Web Browser.
@@ -193,7 +193,7 @@ For Desktop sites simply select the category from the navigation bar.
 
 [Index](#top)
 
-### Deployment <br>
+### 4. Deployment <br>
 
 To deploy my website I have used GitHub. In order to do so I have followed the below steps:
 
@@ -206,57 +206,21 @@ To deploy my website I have used GitHub. In order to do so I have followed the b
 - The web address will appear. Example: https://mrbertieg.github.io/bar-quiz/index.html
 - Refresh the page again and a green tick will appear next to the new web address.
 
-
 <br><br>
 
 [Index](#top)
 
-## Footer 
-<br><br>
-
-[Top of the page](#top)
-
-### Town Tour
-
-
-
-<br><br>
-
-[Index](#top)
-
-### Contact
-![Contact Page Screenshot](assets/images/readme_img/contact_small.png)
-
-
-
-<br><br>
-
-[Index](#top)
-
-### <a name="wireframe">3. Website Wireframe</a>
-
-
-Mobile 
-![Mobile Wireframe Picture](assets/images/readme_img/Wireframe_mobile.png)
-
-Tablet
-![Tablet Wireframe Picture](assets/images/readme_img/Wireframe_Tablet.png)
-
-Web Browser
-![Web Browser Picture](assets/images/readme_img/Wireframe_Website.png)
-
-
-<br><br>
-
-[Index](#top)
-
-### <a name="manual-testing">4. Manual Testing</a>
+### <a name="manual-testing">5. Manual Testing</a>
 
 TEST | ACTION | RESULT |
------|:--------:|--------|
-Landing Page | Clicking on the Logo, Title, and Main Picture banner will redirect to the main landing page. Clicking on the video will play with no issues. All other links in the landing page will redirect the user to external pages. All links work correctly.| PASS
-Town Tour Page | Clicking "Town Tour" tab in the nav bar will redirect you to the second page of the website. Should the user wish to return to the Landing Page then this can be achieved by clicking the picture logo or Visit Folkestone title. All images have been tested, and will redirect the user successfully to external pages. | PASS
-Contact Page | Clicking "Contact" tab in the nav bar will redirect you to the third page of the website. Should the user wish to return to the Landing Page then this can be achieved by clicking the picture logo or Visit Folkestone title. The submission form will send the information successfully to https://formdump.codeinstitute.net/ . The google maps interractive map also works successfully. | PASS
+-----|:--------|--------|
+Landing Page |Clicking on Top 5 Tom Cruises will take you to the Leaderboard Page. Clicking on "Go to Quiz" will take you to the quiz page| PASS
+Leaderboard Page| Clicking on the House logo will take you to the Landing Page. Clicking on the "Home Button" will take you to the Landing Page | PASS
+Quiz Page| Clicking on the Home Logo will take you to the Landing Page. <br> Clicking on the Rules button will open modal window. <br> Clicking on the Start button will open modal window with the Quiz. <br> Clicking on the Contact button will open a modal window with a feedback form. <br> Clicking on the X on the modal wildows will close the windows. <br> Clicking on "Take Test" will open a modal window with the quiz. <br> Clicking on the Exit Logo will open a modal window. <br> Clicking On "Yes" will send you to the Landing Page. <br> Clicking on "No" will close the exit modal.| PASS
+Quiz Modal | Clicking on any of the 4 answers will trigger the next question to load. <br> Clicking on the X will close the quiz modal| PASS
+Text | All fonts and colours have been consistent throughout the website | PASS
+Text | All fonts and colours have been consistent throughout the website | PASS
+Text | All fonts and colours have been consistent throughout the website | PASS
 Text | All fonts and colours have been consistent throughout the website | PASS
 Footer | The footer contains four social media icons. It is found on all three pages in the exact location on each page. The four social media icons are: Facebook, Instagram, Youtube, Twitter which when clicked, will redirect the user to their respective website. This will work on all three pages. | PASS
 
