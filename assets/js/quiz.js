@@ -130,7 +130,7 @@ let getNewQuestion = () => {
     question.innerText = currentQuestion.question;
 
     choices.forEach(choice => {
-        const number = choice.dataset['number'];
+        const number = choice.dataset.number;
         choice.innerText = currentQuestion['choice' + number];
     });
 
@@ -146,7 +146,7 @@ choices.forEach(choice => {
         acceptingAnswers = false;
 
         const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset['number'];
+        const selectedAnswer = selectedChoice.dataset.number;
 
         //Determines the colour of the box if the answer is correct or incorrect
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';

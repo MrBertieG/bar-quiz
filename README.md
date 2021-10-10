@@ -217,10 +217,9 @@ TEST | ACTION | RESULT |
 Landing Page |Clicking on Top 5 Tom Cruises will take you to the Leaderboard Page. Clicking on "Go to Quiz" will take you to the quiz page| PASS
 Leaderboard Page| Clicking on the House logo will take you to the Landing Page. Clicking on the "Home Button" will take you to the Landing Page | PASS
 Quiz Page| Clicking on the Home Logo will take you to the Landing Page. <br> Clicking on the Rules button will open modal window. <br> Clicking on the Start button will open modal window with the Quiz. <br> Clicking on the Contact button will open a modal window with a feedback form. <br> Clicking on the X on the modal wildows will close the windows. <br> Clicking on "Take Test" will open a modal window with the quiz. <br> Clicking on the Exit Logo will open a modal window. <br> Clicking On "Yes" will send you to the Landing Page. <br> Clicking on "No" will close the exit modal.| PASS
-Quiz Modal | Clicking on any of the 4 answers will trigger the next question to load. <br> Clicking on the X will close the quiz modal| PASS
-Text | All fonts and colours have been consistent throughout the website | PASS
-Text | All fonts and colours have been consistent throughout the website | PASS
-Text | All fonts and colours have been consistent throughout the website | PASS
+Quiz Modal | Clicking on any of the 4 answers will trigger the next question to load. <br> Clicking on the X will close the quiz modal. <br> Completing the quiz will close the quiz modal window.| PASS
+End Page | Clicking on the Home Logo will take you to the Landing Page. <br> Clicking on the "Save" buttion without entering a name will not save the score. <br> Entering a name in the input box and pressing "Save" will save the score and load the Landing Page. <br> Clicking on "Play Again" will take you to the Quiz Page where you can start again. <br> Clicking on "Go Home" will take you to the Landing Page. | PASS
+Contact Form | Clicking "Leave Feedback!" button without entering a name and a valid email will not submit. <br> Entering a name and a valid email and a message will allow you to submit the form. <br> The "Clear" button will clear all of the information. | PASS
 Text | All fonts and colours have been consistent throughout the website | PASS
 Footer | The footer contains four social media icons. It is found on all three pages in the exact location on each page. The four social media icons are: Facebook, Instagram, Youtube, Twitter which when clicked, will redirect the user to their respective website. This will work on all three pages. | PASS
 
