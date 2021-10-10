@@ -11,7 +11,9 @@ Bar Quiz is an interractive werbsite designed to engage with users and test thei
 # <a name="top">Table of Contents</a>
 
 ### [1. User Experience](#user-ex) 
-
+- User Expectations
+- Design Approach
+- Returning Users
 ### [2. Features](#features)
 - Navigation Bar
 - Home Page
@@ -33,22 +35,27 @@ Bar Quiz is an interractive werbsite designed to engage with users and test thei
 
 ## <a name="user-ex">1. User Experience</a>
 
-### A user visiting the website would expect the following:
+### User Expectations
+The main goal of this quiz is to establish if users know what a classick cocktail is made of. At the end of each quiz users will be given a score and compare themselvs against other users.<br><br>
 
+### A new user:
+A user visiting the page for the first time will be able to understand what to do and be able to navigate the page with ease. <br><br>
 
-### A returning user visiting the website:
+### A returning user:
+A returning user will be able to jump directly to the Leaderboard on the main page and see what the top score is before starting the quiz themselves. <br><br>
 
+### A frequesnt user:
+A frequesnt user would want to knwo of any n ew questions have been added to the quiz and compare scores(localy).
 
 <br><br>
 
 ### Design Approach
 
 
-
-
 ## <a name="features">2. Features</a>
 [Top of the page](#top)
-### Navigation ![Navigation bar](assets/images/readme_img/nav_bar.png)
+### Navigation 
+![Navigation bar](assets/images/readme_img/big_screen_nav.png)
 - The navigation bar has four different versions depending on which page the user is on, and on what size screen the user is using. 
 
 Mobile Home Page <br>
@@ -105,8 +112,8 @@ Mobile <br>
 In the mobile version a menu bar appears on the right top corner of the page. This allows top user to see the 3 different options presented to them via an overlay animation effect. These 3 options are:
 - Rules
     - When clicked a popup window appears with the rules of the quiz.
-    - To exit the window the user can click the X symbol.
-![Mobile Rules](assets/images/readme_img/mobile_rules.png) <br>
+    - To exit the window the user can click the X symbol.<br>
+    ![Mobile Rules](assets/images/readme_img/mobile_rules.png) <br>
 <br>
 - Start 
     - The user can start the quiz from here as well. 
