@@ -139,11 +139,19 @@ When the user clickes "Take Test" button the below window will appear. <br>
 The user will then be presented with a question and four options. If the user clickes the correct answer then the question will highlight green, the Score will increase by 100 points and the next question will load. <br>
 If the usser selects the wrong answer then no point will be assigned, the next question will load and the answer will turn red. <br>
 If the user decides to close the quiz window then they can choose to do so by clicking the X button, however the quiz will still be were it was left if the user then decised to carry on with the quiz just by simply clicking "Take Test" again and the quiz will reappear. <br>
-If the user wishes to exit at any stage then they can press the exit symbol. At this stage the page will reload and the progress will be lost.
+If the user wishes to exit at any stage then they can press the exit symbol. At this stage the page will reload and the progress will be lost.<br>
 ![Mobile Quiz](assets/images/readme_img/mobile_quiz_start.png)<br>
 ![Mobile Exit Quiz](assets/images/readme_img/exit_quiz.png)<br>
+<br>
+End of the Quiz<br>
+At the end of the quiz, mobile version or desktop, the user is presented with their final score and 3 options:
+- Save the score. Where the Scorre will be saved locally and presented in the Leaderboard Page.
+- Play Again, where the quiz will restart without saving the score.
+- Go to the Home Page without saving <br>
+![End Quiz Mobile](assets/images/readme_img/end_mobile.png)
+<br><br>
+Leaderboard Page
 
-At the end of the quiz 
 [Top of the page](#top)
 
 ### Header ![The Header picture](assets/images/readme_img/header_intro.png)
