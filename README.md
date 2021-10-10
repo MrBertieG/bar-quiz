@@ -2,10 +2,9 @@
 
 ## Introduction
 
-Bar Quiz is an interractive werbsite designed to engage with users and test their general knowlege on what the classic cocktails are made of.
+Bar Quiz is an interractive website designed to engage with users and test their general knowlege on what the classic cocktails are made of.<br>
 
-![Image of Bar Quiz webpage](assets/images/readme_img/ami_ bar_quiz.png)
-
+![Ami](assets/images/readme_img/ami_ bar_quiz.png)<br>
 <br><br>
 
 ## <a name="top">Table of Contents</a>
@@ -49,11 +48,9 @@ A frequesnt user would want to knwo of any n ew questions have been added to the
 
 <br><br>
 
-### Design Approach
-
-
-## <a name="features">2. Features</a>
 [Top of the page](#top)
+## <a name="features">2. Features</a>
+
 ### Navigation 
 ![Navigation bar](assets/images/readme_img/big_screen_nav.png)
 - The navigation bar has four different versions depending on which page the user is on, and on what size screen the user is using. 
@@ -67,7 +64,7 @@ Mobile Quiz Page<br>
 Mobile Overlay Effect when pressing the menu<br>
 ![Overlay On](assets/images/readme_img/mobile_overlay_nav.png)
 
-Mobile Exit Button With Window <br>
+Mobile Exit Button With Modal Window <br>
 ![Exit Button](assets/images/readme_img/mobile_exit_popup.png)
 <br>
 User can decide if they wish to exit the page they are in by clicking the exit button. This will take them to the main home page.
@@ -84,15 +81,15 @@ In screens bigger than 500px the nav bar menu has a animation effect where text 
 <br/><br/>
 
 ### Home Page
-<br>
 
 Both Mobile and Desktop consit in having the following:
 -  Header with the title of the website. 
 - An introduction box with a brief description. 
 - A link to the highest score users under the button "Top 5 Tom Cruises". 
 - A "Go to Quiz" button which will take the user to the quiz page.
-- A footer containing four social media links which open in individual pages 
+- A footer containing four social media links which open in individual pages.
 <br>
+
 Mobile<br>
 ![Mobile Home Page](assets/images/readme_img/mobile_home.png)
 <br>
@@ -104,12 +101,12 @@ Desktop<br>
 
 ### Quiz Page
 
-Both Mobile and Desktop contain similar features such as a description box with the rules of the quiz, a button which allows the user to take the test and the footer with the social media links. There a re a few differences between Mobile and Desktop.
+Both Mobile and Desktop contain similar features such as a description box with the rules of the quiz, a button which allows the user to take the test and the footer with the social media links. There are a few differences between Mobile and Desktop.
 
 Mobile <br>
 ![Bobile Quiz Intro](assets/images/readme_img/mobile_quiz1.png)
 <br>
-In the mobile version a menu bar appears on the right top corner of the page. This allows top user to see the 3 different options presented to them via an overlay animation effect. These 3 options are:
+In the mobile version a menu bar appears on the right top corner of the page. This allows the user to see the 3 different options presented to them via an overlay animation effect. These 3 options are:
 - Rules
     - When clicked a popup window appears with the rules of the quiz.
     - To exit the window the user can click the X symbol.<br>
@@ -117,40 +114,47 @@ In the mobile version a menu bar appears on the right top corner of the page. Th
 <br>
 - Start 
     - The user can start the quiz from here as well. 
-    - The quiz can be closed via the X button but no warning will be shown here.
+    - The quiz can be closed via the X button but no warning will be shown here.<br>
+
 ![Mobile Menu Quiz](assets/images/readme_img/mobile_rules.png)  
 <br>
 - Contact
     - The user can open the contact window and enter any feedback.
     - The contact window can be close via the X button.<br>
+
 ![Mobile Contact Window](assets/images/readme_img/mobile_contact.png) <br>
 <br><br>
 Desktop <br>
-In the desktop version the hamburger menu has now disapeared and been replaced with 3 navigation links that animate when the page first loads. The links have the same functions as in the mobile version with the exception of the cursor being a pointer and a hover effect. <br>
-![Desktop Quiz](assets/images/readme_img/desktop_quiz1.png) <br>
+In the desktop version the hamburger menu has now disapeared and has been replaced with 3 navigation links that animate when the page first loads. The links have the same functions as in the mobile version with the exception of the cursor being a pointer. <br>
 
+![Desktop Quiz](assets/images/readme_img/desktop_quiz1.png) <br>
+<br><br>
 - Exit Button<br>
 Both in Mobile and desktop the exit button appears if the user presses the symbol. If the user chooses "Yes" then the home page will relload. If the user chooses "No" then the window will close and the user can carry on.<br>
+
 ![Exit Window Button](assets/images/readme_img/exit.png)<br><br>
 
-The Quiz <br>
-Mobile Version <br>
-When the user clickes "Take Test" button the below window will appear. <br>
-The user will then be presented with a question and four options. If the user clickes the correct answer then the question will highlight green, the Score will increase by 100 points and the next question will load. <br>
-If the usser selects the wrong answer then no point will be assigned, the next question will load and the answer will turn red. <br>
-If the user decides to close the quiz window then they can choose to do so by clicking the X button, however the quiz will still be were it was left if the user then decised to carry on with the quiz just by simply clicking "Take Test" again and the quiz will reappear. <br>
+The Quiz<br>
+When the user clickes the "Take Test" button the below window will appear. The user will then be presented with a question and four options. If the user clickes the correct answer then the question will highlight green, the Score will increase by 100 points and the next question will load. <br>
+If the user selects the wrong answer then no point will be assigned, the next question will load and the answer will turn red. <br>
+
+In the desktop version the options have a hover effect where the answers scale up when hovered over.
+
+If the user decides to close the quiz window then they can choose to do so by clicking the X button, however the quiz will still be on the same question where it was left if the user then decised to carry on with the quiz just by simply clicking "Take Test" again and the quiz will reappear. <br>
 If the user wishes to exit at any stage then they can press the exit symbol. At this stage the page will reload and the progress will be lost.<br>
 ![Mobile Quiz](assets/images/readme_img/mobile_quiz_start.png)<br>
 ![Mobile Exit Quiz](assets/images/readme_img/exit_quiz.png)<br>
 <br>
 End of the Quiz<br>
 At the end of the quiz, mobile version or desktop, the user is presented with their final score and 3 options:
-- Save the score. Where the Scorre will be saved locally and presented in the Leaderboard Page.
+- Save the score. Where the Score will be saved locally and presented in the Leaderboard Page.
 - Play Again, where the quiz will restart without saving the score.
 - Go to the Home Page without saving the score. <br>
 ![End Quiz Mobile](assets/images/readme_img/end_mobile.png)
 <br><br>
+
 Leaderboard Page
+<br>
 After the user has completed the quiz and saved the score, they are able to see how their resul copares to previous users or attempts. It is worth mentioning this can be seen only if the quiz is taken on the same device(locally). <br>
 <br>
 Social Media Links<br>
