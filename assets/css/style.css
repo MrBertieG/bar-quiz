@@ -615,6 +615,7 @@ a {
     color: rgb(174, 49, 14, 1);
     margin: 7px;
     padding: 7px;
+	background-color: inherit;
 }
 
 .btn {

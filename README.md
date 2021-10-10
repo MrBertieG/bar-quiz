@@ -122,7 +122,7 @@ In the mobile version a menu bar appears on the right top corner of the page. Th
 <br>
 - Contact
     - The user can open the contact window and enter any feedback.
-    - The contact window can be close via the X button. 
+    - The contact window can be close via the X button.<br>
 ![Mobile Contact Window](assets/images/readme_img/mobile_contact.png) <br>
 <br><br>
 Desktop <br>
