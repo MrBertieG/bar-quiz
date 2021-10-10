@@ -253,6 +253,15 @@ Footer | The footer contains four social media icons. It is found on all three p
 ![W3C HTML Validator Screenshot](assets/images/validator/w3c_leaderboard.png)
 - Jigsaw CSS Validator
 ![W3C CSS Validator Screenshot](assets/images/validator/w3c_style.png)
+- JSHint Animations Validator
+![W3C CSS Validator Screenshot](assets/images/validator/jshint_animations.png)
+- JSHint End Page Validator
+![W3C CSS Validator Screenshot](assets/images/validator/jshint_end_page.png)
+- JSHint Leaderboard Page Validator
+![W3C CSS Validator Screenshot](assets/images/validator/jshint_highscore.png)
+- JSHint Quiz Page Validator
+![W3C CSS Validator Screenshot](assets/images/validator/jshint_quiz.png)
+
 
 <br><br>
 
@@ -275,14 +284,6 @@ Footer | The footer contains four social media icons. It is found on all three p
 - [Viewport Resizer](https://chrome.google.com/webstore/detail/viewport-resizer-%E2%80%93-respon/kapnjjcfcncngkadhpmijlkblpibdcgm?hl=en) is a Chrome extension used to simulate the viewport of various devices, from Mobile to Desktop. 
 - [Readme](https://chrome.google.com/webstore/detail/readme-text-to-speech-rea/npdkkcjlmhcnnaoobfdjndibfkkhhdfn?hl=en-GB) is a Text-to-speach reader. This was particularly useful to use as it shows first hand what might visually impaired users would hear if the pictures can't be seen. 
 - [W3C Markup](https://validator.w3.org/) and [Jigsaw](https://jigsaw.w3.org/css-validator/) validators are used to check the syntax of both languages.
-
-<br><br>
-
-[Top of the page](#top)
-
-### <a name="deployment">6.Deployment</a>
-
- 
 
 <br><br>
 
