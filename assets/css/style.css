@@ -818,7 +818,7 @@ a {
 	}
 
 	.start-quiz {
-		top: 64%;
+		top: 60%;
 	}
 
 	.description-box {
@@ -887,6 +887,7 @@ a {
 		font-size: 20px;
 	}
 	.start-quiz {
+		top: 60%;
 		width: 300px;
 		height: 60px;
 		font-size: 20px;
