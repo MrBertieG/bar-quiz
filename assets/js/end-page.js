@@ -39,5 +39,5 @@ let saveHighScore = q => {
     highScores.splice(5);
     //Sends user to Home page after pressing Save
     localStorage.setItem('highScores', JSON.stringify(highScores));
-    window.location.assign('index.html');
+    window.location.assign('highscores.html');
 };

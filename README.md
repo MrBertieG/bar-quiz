@@ -8,7 +8,7 @@ Bar Quiz is an interractive werbsite designed to engage with users and test thei
 
 <br><br>
 
-# <a name="top">Table of Contents</a>
+## <a name="top">Table of Contents</a>
 
 ### [1. User Experience](#user-ex) 
 - User Expectations
@@ -290,12 +290,22 @@ Footer | The footer contains four social media icons. It is found on all three p
 [Top of the page](#top)
 
 ### <a name="bugs">7.Bugs</a>
-
+- The main bug incountered was when the website was deployed and some pages displayed a page not found error. This was due to some file paths being written as absolute file paths and not relative. Changing the patsh structure has eliminated the bug. 
+- The Contact modal was not centered to the page correctly.
+- The Contact submission buttons did not have sufficient padding.
+- The Header logo did not have sufficient padding. 
+- The modal close X button was too small and not consistent with other pages
 
 
    <br><br> 
 
-[Index](#top)
+[Top of the page](#top)
 
 ### <a name="credits"> 8. Credits</a>
-
+The following resources were used to get inspiration in creating this Website. <br>
+- Youtube:
+    - [Web Dev Simplified](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw) for the creation of the modals.
+    - [Dev Ed](https://www.youtube.com/c/DevEd) for the ceration of the menu overlay effect and animation.
+    - [Stack Overflow](https://stackoverflow.com/) (various posts) for the help in understanding certain functions and troubleshooting.
+    - [Slack](https://slack.com/intl/en-gb/) for the help provided throught the development process.
+    -[W3schools](https://www.w3schools.com/) for the hamburger menu inspiration.
