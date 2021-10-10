@@ -44,12 +44,15 @@ nav {
 .fa-home {
 	margin-top: 1%;
 	margin-left: 1%;
+	padding-left: 5px;
 	color: rgb(223, 203, 192);
 }
 
 .fa-cocktail {
 	margin-top: 1%;
 	margin-left: 1%;
+	padding-left: 5px;
+	margin-top: 5px;
 	color: rgb(223, 203, 192);
 }
 
@@ -57,7 +60,7 @@ nav {
 	color: rgb(223, 203, 192);
 	grid-column: 4;
 	justify-self: right;
-	padding: 5px;
+	padding: 5px 6px 4px 0;
 }
 
 .fa-sign-out-alt {
@@ -259,7 +262,8 @@ a.l-btn {
 
 .description-box li {
 	list-style-position: inside;
-	padding-top: 11px;
+	padding: 11px 2px 0 9px;
+	margin-bottom: -4px;
 }
 
 .start-quiz {
@@ -297,9 +301,11 @@ a.l-btn {
 
 .contact {
 	position: fixed;
-	top: 20%;
-	left: 9%;
-	transform: translate(-50%, -50%) scale(0);
+	top: 50%;
+	left: 50%;
+	margin-top: -233px;
+	margin-left: -150px;
+	transform: scale(0);
 	transition: 200ms ease-in-out;
 	border: 1px solid black;
 	border-radius: 5px;
@@ -371,6 +377,14 @@ a.l-btn {
 	border-bottom: 1px solid black;
 }
 
+.contact-title {
+	font-size: 1.5rem;
+}
+
+.rules-header {
+	font-size: 1.5rem;
+}
+
 .rules-list {
 	padding-top: 25px;
 	padding-left: 25px;
@@ -382,8 +396,9 @@ a.l-btn {
 	border: none;
 	outline: none;
 	background: none;
-	font: 1.5rem;
+	font-size: 1.5rem;
 	font-weight: bold;
+	padding: 5px;
 }
 
 .contact-header .x-btn {
@@ -391,8 +406,9 @@ a.l-btn {
 	border: none;
 	outline: none;
 	background: none;
-	font: 1.5rem;
+	font-size: 1.5rem;
 	font-weight: bold;
+	padding: 5px;
 }
 
 .game .x-btn {
@@ -400,10 +416,11 @@ a.l-btn {
 	border: none;
 	outline: none;
 	background: none;
-	font-size: 20px;
+	font-size: 1.5rem;
 	font-weight: bold;
 	position: relative;
 	left: 90%;
+	padding: 5px;
 }
 
 /* Quiz Questionare */
@@ -424,7 +441,7 @@ a.l-btn {
 }
 
 .choice-prefix {
-	padding: 2px 2px;
+	padding: 5px 2px 5px 5px;
 	color: seashell;
 }
 
@@ -445,7 +462,12 @@ a.l-btn {
 
 #hud {
 	display: flex;
+	position: relative;
+	top: -20px;
+	left: 29px;
 	justify-content: space-between;
+	height: 9px;
+
 }
 
 .hud-prefix {
@@ -507,6 +529,11 @@ fieldset textarea {
 	width: 98%;
 	padding-left: 5px;
 	border-radius: 5px;
+	margin-top: 5px;
+}
+
+legend {
+	padding-top: 5px;
 }
 
 .cont-info {
@@ -519,17 +546,19 @@ fieldset textarea {
 
 .button1 {
 	float: left;
-	padding: 0 5px 0 5px;
+	padding: 2px 5px 2px 5px;
 	margin-left: 7px;
 	border-radius: 5px;
+	border: 1px solid black;
 	cursor: pointer;
 }
 
 .button2 {
 	float: right;
-	padding: 0 5px 0 5px;
+	padding: 2px 5px 2px 5px;
 	margin-right: 7px;
 	border-radius: 5px;
+	border: 1px solid black;
 	cursor: pointer;
 }
 
@@ -814,9 +843,6 @@ a {
 	#main-intro {
 		width: 350px;
 	}
-	.contact {
-		left: 37%;
-	}
 
 	.start-quiz {
 		top: 60%;
@@ -846,7 +872,7 @@ a {
 		width: 160px;
 		height: fit-content;
 		position: fixed;
-		top: 63%;
+		top: 61%;
 		right: 0;
 		bottom: 0;
 		left: 0;

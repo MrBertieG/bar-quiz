@@ -17,6 +17,7 @@ username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value ;
 });
 
+
 /*
 * Prevents autorefresh so that the top 5 usersnames 
 * will appear if the quiz is taken multiple times
@@ -41,3 +42,11 @@ let saveHighScore = q => {
     localStorage.setItem('highScores', JSON.stringify(highScores));
     window.location.assign('highscores.html');
 };
+
+function validateUsername() {
+    let us = document.forms["fname"]["names"].value;
+    if (us == "") {
+        alert("Name must be filled out in order to Save");
+        return false;
+    }
+}

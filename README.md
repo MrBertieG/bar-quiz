@@ -1,10 +1,12 @@
-## Welcome to Bar Quiz Website
+# Bar Quiz
 
 ## Introduction
 
-Bar Quiz is an interractive website designed to engage with users and test their general knowlege on what the classic cocktails are made of.<br>
+Welcome to [Bar Quiz](https://mrbertieg.github.io/bar-quiz/index.html) website!
 
-![Ami](assets/images/readme_img/ami_ bar_quiz.png)<br>
+Bar Quiz is an interractive website designed to engage with users and test their general knowlege on what the classic cocktails are made of.
+
+![Ami](assets/images/readme_img/ami.png)
 <br><br>
 
 ## <a name="top">Table of Contents</a>
@@ -30,18 +32,19 @@ Bar Quiz is an interractive website designed to engage with users and test their
 ### [8. Credits](#credits)
 
 <br><br>
+
 [Top of the page](#top)
 
 ## <a name="user-ex">1. User Experience</a>
 
 ### User Expectations
-The main goal of this quiz is to establish if users know what a classick cocktail is made of. At the end of each quiz users will be given a score and compare themselvs against other users.<br><br>
+The main goal of this quiz is to establish if users know what a classick cocktail is made of. At the end of each quiz users will be given a score and compare themselvs against other users.<br>
 
 ### A new user:
-A user visiting the page for the first time will be able to understand what to do and be able to navigate the page with ease. <br><br>
+A user visiting the page for the first time will be able to understand what to do and be able to navigate the page with ease. <br>
 
 ### A returning user:
-A returning user will be able to jump directly to the Leaderboard on the main page and see what the top score is before starting the quiz themselves. <br><br>
+A returning user will be able to jump directly to the Leaderboard on the main page and see what the top score is before starting the quiz themselves. <br>
 
 ### A frequesnt user:
 A frequesnt user would want to knwo of any n ew questions have been added to the quiz and compare scores(localy).
@@ -55,19 +58,24 @@ A frequesnt user would want to knwo of any n ew questions have been added to the
 ![Navigation bar](assets/images/readme_img/big_screen_nav.png)
 - The navigation bar has four different versions depending on which page the user is on, and on what size screen the user is using. 
 
-Mobile Home Page <br>
+Mobile Home Page
+
 ![Nav bar home page mobile](assets/images/readme_img/mobile_home_nav.png)
 
-Mobile Quiz Page<br>
+Mobile Quiz Page
+
 ![nav bar quiz page mobile](assets/images/readme_img/mobile_quiz_nav.png)
 
-Mobile Overlay Effect when pressing the menu<br>
+Mobile Overlay Effect when pressing the menu
+
 ![Overlay On](assets/images/readme_img/mobile_overlay_nav.png)
 
-Mobile Exit Button With Modal Window <br>
+Mobile Exit Button With Modal Window 
+
 ![Exit Button](assets/images/readme_img/mobile_exit_popup.png)
-<br>
+
 User can decide if they wish to exit the page they are in by clicking the exit button. This will take them to the main home page.
+
 <br><br>
 
 Mobile Leaderboard and End Page <br>
@@ -157,8 +165,10 @@ Leaderboard Page
 <br>
 After the user has completed the quiz and saved the score, they are able to see how their resul copares to previous users or attempts. It is worth mentioning this can be seen only if the quiz is taken on the same device(locally). <br>
 <br>
-Social Media Links<br>
+Social Media Links
+<br>
 Theare are 4 icons on each page which open in new separate tabs individually
+<br>
 - Facebook
 - Instagram
 - Twitter
