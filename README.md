@@ -147,34 +147,71 @@ End of the Quiz<br>
 At the end of the quiz, mobile version or desktop, the user is presented with their final score and 3 options:
 - Save the score. Where the Scorre will be saved locally and presented in the Leaderboard Page.
 - Play Again, where the quiz will restart without saving the score.
-- Go to the Home Page without saving <br>
+- Go to the Home Page without saving the score. <br>
 ![End Quiz Mobile](assets/images/readme_img/end_mobile.png)
 <br><br>
 Leaderboard Page
+After the user has completed the quiz and saved the score, they are able to see how their resul copares to previous users or attempts. It is worth mentioning this can be seen only if the quiz is taken on the same device(locally). <br>
+<br>
+Social Media Links<br>
+Theare are 4 icons on each page which open in new separate tabs individually
+- Facebook
+- Instagram
+- Twitter
+- Youtube
+<br><br>
+Rules Window <br>
+The Rules window can be accessed by pressing the ![Hamburger Menu](assets/images/readme_img/mobile_hamburger.png) and then selecting Rules. The following window will appear. <br>
+![Rules Window](assets/images/mobile_rules.png) <br>
+To exit the window simply press the X button. 
+<br><br>
+Contact Window <br>
+The Contact Window can be accessed by pressing the ![Hamburger Menu](assets/images/readme_img/mobile_hamburger.png) and then selectin Contact. The following window will appear. <br>
+![Contact Window](assets/images/readme_img/mobile_contact2.png)<br>
+To exit the window simply press the X button. <br>
+
+For Desktop sites simply select the category from the navigation bar. 
+<br><br>
+
+
+
+<br>
 
 [Top of the page](#top)
 
-### Header ![The Header picture](assets/images/readme_img/header_intro.png)
+### Wireframe 
 
+- The website's skeleton was designed using Balsamiq
+- Three versions were designed: Mobile, Tablet and Web Browser.
+- Although the Website is not 100% identical to the wireframe, this has proven to be a useful tool in establishing how the website will be designed. <br>
+![Balsamiq Wireframe Mobile](assets/images/readme_img/mobile_version1.png)<br>
+![Balsamiq Wireframe Mobile](assets/images/readme_img/mobile_version2.png)<br>
+![Balsamiq Wireframe Desktop](assets/images/readme_img/desktop_version1.png)<br>
+![Balsamiq Wireframe Desktop](assets/images/readme_img/desktop_version2.png)<br>
 
-
-[Top of the page](#top)
-
-### External Links Section ![Links Section Image](assets/images/readme_img/Links_Section.png)
-
-<br/><br/>
+<br><br>
 
 [Index](#top)
 
-### Visit Folkestone Video ![Page Video](assets/images/readme_img/Video.png)
+### Deployment <br>
+
+To deploy my website I have used GitHub. In order to do so I have followed the below steps:
+
+- Create a repository on GitHub.
+- Go to the list of repository in GitHub.
+- Select the repository you wish to deploy, in my case Bar-Quiz repository.
+- In the top navigation bar select Settings.
+- On the left column list select Pages.
+- Under Source click on the drop down arrow next to None and select Main and press Save. The page will refresh.
+- The web address will appear. Example: https://mrbertieg.github.io/bar-quiz/index.html
+- Refresh the page again and a green tick will appear next to the new web address.
 
 
 <br><br>
 
 [Index](#top)
 
-## Footer <br>![Social Media Logos](assets/images/readme_img/footer.png)
-
+## Footer 
 <br><br>
 
 [Top of the page](#top)
