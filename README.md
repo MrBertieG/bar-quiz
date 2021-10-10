@@ -1,4 +1,4 @@
-# Welcome to Bar Quiz Website
+## Welcome to Bar Quiz Website
 
 ## Introduction
 
@@ -191,9 +191,9 @@ For Desktop sites simply select the category from the navigation bar.
 
 <br><br>
 
-[Index](#top)
+[Top of the page](#top)
 
-### 4. Deployment <br>
+### <a name="deployment">4. Deployment </a><br>
 
 To deploy my website I have used GitHub. In order to do so I have followed the below steps:
 
@@ -208,7 +208,7 @@ To deploy my website I have used GitHub. In order to do so I have followed the b
 
 <br><br>
 
-[Index](#top)
+[Top of the page](#top)
 
 ### <a name="manual-testing">5. Manual Testing</a>
 
@@ -224,22 +224,39 @@ Text | All fonts and colours have been consistent throughout the website | PASS
 Footer | The footer contains four social media icons. It is found on all three pages in the exact location on each page. The four social media icons are: Facebook, Instagram, Youtube, Twitter which when clicked, will redirect the user to their respective website. This will work on all three pages. | PASS
 
 
-- Chrome Developer Tools Lighthouse. The Performance is in the amber zone due the the picture sizes. Visit Folkestone is a website designed to attract visitors so the aim is for the pictures to be as clear and high definition as possible to entice people to come over. The Website still performes well.
-![Lighthouse DevTools](assets/images/readme_img/Lighthouse_performance.png)
-![Lighthouse DevTools](assets/images/readme_img/Lighthouse_performance_town_tour.png)
-![Lighthouse DevTools](assets/images/readme_img/Lighthouse_performance_conact.png)
-- W3C Validator Index Page.
-![W3C HTML Validator Screenshot](assets/images/readme_img/index_page.png)
-- W3C Validator Town Tour Page.
-![W3C HTML Validator Screenshot](assets/images/readme_img/town_tour_page.png)
-- W3C Validator Contact Page.
-![W3C HTML Validator Screenshot](assets/images/readme_img/town_tour_page.png)
-- Jigsaw Validator.
-![W3C CSS Validator Screenshot](assets/images/readme_img/W3C_CSS_Validator.png)
+- Chrome Developer Tools Lighthouse. The Performance is overall good due to the minimal amount of images used on the website. The test was ran for the Mobile and Desktop Version. <br>
+
+- Mobile Index Page <br>
+![Lighthouse DevTools](assets/images/validator/lh_index_m.png)<br>
+- Mobile Quiz Page <br>
+![Lighthouse DevTools](assets/images/validator/lh_quiz_m.png)<br>
+- Mobile End Page <br>
+![Lighthouse DevTools](assets/images/validator/lh_end_m.png)<br>
+- Mobile Leaderboard Page <br>
+![Lighthouse DevTools](assets/images/validator/lh_leaderboard_m.png)<br>
+- Desktop Index Page <br>
+![Lighthouse DevTools](assets/images/validator/lh_index.png)<br>
+- Desktop Quiz Page <br>
+![Lighthouse DevTools](assets/images/validator/lh_quiz.png)<br>
+- Desktop End Page <br>
+![Lighthouse DevTools](assets/images/validator/lh_end.png)<br>
+- Desktop Leaderboard Page <br>
+![Lighthouse DevTools](assets/images/validator/lh_end.png)<br>
+
+- W3C Validator Index Page
+![W3C HTML Validator Screenshot](assets/images/validator/w3c_index.png)
+- W3C Validator Quiz Page
+![W3C HTML Validator Screenshot](assets/images/validator/w3c_quiz.png)
+- W3C Validator End Page
+![W3C HTML Validator Screenshot](assets/images/validator/w3c_end.png)
+- W3C Validator Leaderboard Page
+![W3C HTML Validator Screenshot](assets/images/validator/w3c_leaderboard.png)
+- Jigsaw CSS Validator
+![W3C CSS Validator Screenshot](assets/images/validator/w3c_style.png)
 
 <br><br>
 
-[Index](#top)
+[To the top](#top)
 
 ### <a name="tech-used">5. Technologies Used</a>
 
@@ -261,7 +278,7 @@ Footer | The footer contains four social media icons. It is found on all three p
 
 <br><br>
 
-[Index](#top)
+[Top of the page](#top)
 
 ### <a name="deployment">6.Deployment</a>
 
@@ -269,7 +286,7 @@ Footer | The footer contains four social media icons. It is found on all three p
 
 <br><br>
 
-[Index](#top)
+[Top of the page](#top)
 
 ### <a name="bugs">7.Bugs</a>
 
