@@ -38,16 +38,16 @@ Bar Quiz is an interractive website designed to engage with users and test their
 ## <a name="user-ex">1. User Experience</a>
 
 ### User Expectations
-The main goal of this quiz is to establish if users know what a classick cocktail is made of. At the end of each quiz users will be given a score and compare themselvs against other users.<br>
+- The main goal of this quiz is to establish if users know what a classick cocktail is made of. At the end of each quiz users will be given a score and compare themselvs against other users.<br>
 
 ### A new user:
-A user visiting the page for the first time will be able to understand what to do and be able to navigate the page with ease. <br>
+- A user visiting the page for the first time will be able to understand what to do and be able to navigate the page with ease. <br>
 
 ### A returning user:
-A returning user will be able to jump directly to the Leaderboard on the main page and see what the top score is before starting the quiz themselves. <br>
+- A returning user will be able to jump directly to the Leaderboard on the main page and see what the top score is before starting the quiz themselves. <br>
 
-### A frequesnt user:
-A frequesnt user would want to knwo of any n ew questions have been added to the quiz and compare scores(localy).
+### A frequent user:
+- A frequent user would want to know of any new questions which might have been added to the quiz and compare scores(localy).
 
 <br><br>
 
@@ -74,18 +74,21 @@ Mobile Exit Button With Modal Window
 
 ![Exit Button](assets/images/readme_img/mobile_exit_popup.png)
 
-User can decide if they wish to exit the page they are in by clicking the exit button. This will take them to the main home page.
+The user can decide if they wish to exit the page they are in by clicking the exit button. This will take them to the main home page.
 
 <br><br>
 
 Mobile Leaderboard and End Page <br>
 ![Nav bar leaderboard and end page mobile](assets/images/readme_img/mobile_leaderboard_nav.png)
-<br>
+
 The reason why no menu option is offered here is because the user has the options presented to them in the Leaderboard page as a button. 
+
+<br><br>
 
 Big Screen Quiz Page
 ![Big Screen Nav](assets/images/readme_img/big_screen_nav.png)
 In screens bigger than 500px the nav bar menu has a animation effect where text increases size and changes colour. 
+
 <br/><br/>
 
 ### Home Page
@@ -96,11 +99,13 @@ Both Mobile and Desktop consit in having the following:
 - A link to the highest score users under the button "Top 5 Tom Cruises". 
 - A "Go to Quiz" button which will take the user to the quiz page.
 - A footer containing four social media links which open in individual pages.
-<br>
+
+<br><br>
 
 Mobile<br>
 ![Mobile Home Page](assets/images/readme_img/mobile_home.png)
-<br>
+
+<br><br>
 
 Desktop<br>
 ![Desktop Home Page](assets/images/readme_img/desktop_home.png)
@@ -108,8 +113,10 @@ Desktop<br>
 <br><br>
 
 ### Quiz Page
-
+<br>
 Both Mobile and Desktop contain similar features such as a description box with the rules of the quiz, a button which allows the user to take the test and the footer with the social media links. There are a few differences between Mobile and Desktop.
+
+<br><br>
 
 Mobile <br>
 ![Bobile Quiz Intro](assets/images/readme_img/mobile_quiz1.png)
@@ -118,20 +125,27 @@ In the mobile version a menu bar appears on the right top corner of the page. Th
 - Rules
     - When clicked a popup window appears with the rules of the quiz.
     - To exit the window the user can click the X symbol.<br>
-    ![Mobile Rules](assets/images/readme_img/mobile_rules.png) <br>
-<br>
+
+![Mobile Rules](assets/images/readme_img/mobile_rules.png) <br>
+
+<br><br>
+
 - Start 
-    - The user can start the quiz from here as well. 
+    - The user can start the quiz from here as well. <br>
     - The quiz can be closed via the X button but no warning will be shown here.<br>
 
 ![Mobile Menu Quiz](assets/images/readme_img/mobile_rules.png)  
-<br>
+
+<br><br>
+
 - Contact
     - The user can open the contact window and enter any feedback.
     - The contact window can be close via the X button.<br>
 
 ![Mobile Contact Window](assets/images/readme_img/mobile_contact.png) <br>
+
 <br><br>
+
 Desktop <br>
 In the desktop version the hamburger menu has now disapeared and has been replaced with 3 navigation links that animate when the page first loads. The links have the same functions as in the mobile version with the exception of the cursor being a pointer. <br>
 
@@ -187,9 +201,6 @@ To exit the window simply press the X button. <br>
 For Desktop sites simply select the category from the navigation bar. 
 <br><br>
 
-
-
-<br>
 
 [Top of the page](#top)
 
