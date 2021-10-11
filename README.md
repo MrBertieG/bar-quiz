@@ -143,7 +143,7 @@ Both in Mobile and desktop the exit button appears if the user presses the symbo
 ![Exit Window Button](assets/images/readme_img/exit.png)<br><br>
 
 The Quiz<br>
-When the user clickes the "Take Test" button the below window will appear. The user will then be presented with a question and four options. If the user clickes the correct answer then the question will highlight green, the Score will increase by 100 points and the next question will load. <br>
+When the user clicks the "Take Test" button the below window will appear. The user will then be presented with a question and four options. If the user clickes the correct answer then the question will highlight green, the Score will increase by 100 points and the next question will load. <br>
 If the user selects the wrong answer then no point will be assigned, the next question will load and the answer will turn red. <br>
 
 In the desktop version the options have a hover effect where the answers scale up when hovered over.
@@ -198,6 +198,7 @@ For Desktop sites simply select the category from the navigation bar.
 - The website's skeleton was designed using Balsamiq
 - Three versions were designed: Mobile, Tablet and Web Browser.
 - Although the Website is not 100% identical to the wireframe, this has proven to be a useful tool in establishing how the website will be designed. <br>
+- The final colour cheame was choosed by using the Landing's picture color scheme.<br>
 ![Balsamiq Wireframe Mobile](assets/images/readme_img/mobile_version1.png)<br>
 ![Balsamiq Wireframe Mobile](assets/images/readme_img/mobile_version2.png)<br>
 ![Balsamiq Wireframe Desktop](assets/images/readme_img/desktop_version1.png)<br>
@@ -279,7 +280,7 @@ Footer | The footer contains four social media icons. It is found on all three p
 
 <br><br>
 
-[To the top](#top)
+[Top of the page](#top)
 
 ### <a name="tech-used">5. Technologies Used</a>
 
@@ -304,7 +305,7 @@ Footer | The footer contains four social media icons. It is found on all three p
 [Top of the page](#top)
 
 ### <a name="bugs">7.Bugs</a>
-- The main bug incountered was when the website was deployed and some pages displayed a page not found error. This was due to some file paths being written as absolute file paths and not relative. Changing the patsh structure has eliminated the bug. 
+- The main bug incountered was when the website was deployed and some pages displayed a " 404 page not found$ error. This was due to some file paths being written as an absolute file path and not as a relative path. Changing the path's structure has eliminated the bug. 
 - The Contact modal was not centered to the page correctly.
 - The Contact submission buttons did not have sufficient padding.
 - The Header logo did not have sufficient padding. 
@@ -320,6 +321,6 @@ The following resources were used to get inspiration in creating this Website. <
 - Youtube:
     - [Web Dev Simplified](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw) for the creation of the modals.
     - [Dev Ed](https://www.youtube.com/c/DevEd) for the ceration of the menu overlay effect and animation.
-    - [Stack Overflow](https://stackoverflow.com/) (various posts) for the help in understanding certain functions and troubleshooting.
-    - [Slack](https://slack.com/intl/en-gb/) for the help provided throught the development process.
-    -[W3schools](https://www.w3schools.com/) for the hamburger menu inspiration.
+- [Stack Overflow](https://stackoverflow.com/) (various posts) for the help in understanding certain functions and troubleshooting.
+- [Slack](https://slack.com/intl/en-gb/) for the help provided throught the development process.
+-[W3schools](https://www.w3schools.com/) for the hamburger menu inspiration.
