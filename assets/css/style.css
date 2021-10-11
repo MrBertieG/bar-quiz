@@ -642,9 +642,10 @@ a {
 	font-size: 19px;
     font-family: exo, sans-serif;
     color: rgb(174, 49, 14, 1);
-    margin: 7px;
     padding: 7px;
 	background-color: inherit;
+	margin-left: 16px;
+    width: 99%;
 }
 
 .btn {
