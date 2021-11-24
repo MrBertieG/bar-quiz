@@ -21,6 +21,7 @@ openRulesButtons.forEach(button => {
     openRules(rules);
   });
 });
+
 //Close Rules Window
 closeRulesButtons.forEach(button => {
   button.addEventListener('click', () => {
@@ -74,7 +75,7 @@ closeGameButtons.forEach(button => {
 function closeGame(game) {
   if(game == null) return;
   game.classList.remove('active');
-  if (overlay != undefined) {
+  if (overlay.classList != undefined) {
     overlay.classList.remove('active');
   }
 }
@@ -102,7 +103,7 @@ function openContact(contact) {
   if (contact == null) 
   return;
     contact.classList.add('active');
-    if (overlay != undefined) {
+    if (overlay.classList != undefined) {
       overlay.classList.add('active');
     }
 }
@@ -111,7 +112,7 @@ function closeContact(contact) {
   if (contact == null) 
   return;
   contact.classList.remove('active');
-  if (overlay != undefined) {
+  if (overlay.classList != undefined) {
     overlay.classList.remove('active');
   }
 }
@@ -138,7 +139,7 @@ function openExit(exit) {
   if (exit == null) 
   return;
   exit.classList.add('active');
-  if (overlay != undefined) {
+  if (overlay.classList != undefined) {
     overlay.classList.add('active');
   }
 }
@@ -147,7 +148,7 @@ function closeExit(exit) {
   if (exit == null) 
   return;
   exit.classList.remove('active');
-  if (overlay != undefined) {
+  if (overlay.classList != undefined) {
     overlay.classList.remove('active');
   }
 }
