@@ -122,12 +122,17 @@ let getNewQuestion = () => {
     *and adds the % in the loading bar at the same time
     */
     questionCounter++;
-    progressText.innerText =`Question ${questionCounter} of ${max_questions}`;
-    progressBarFull.style.width = `${(questionCounter/max_questions) * 100}%`;
-
+    if (progressText != null) {
+        progressText.innerText =`Question ${questionCounter} of ${max_questions}`;
+    }
+    if (progressBarFull != null) {
+        progressBarFull.style.width = `${(questionCounter/max_questions) * 100}%`;
+    }
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
-    question.innerText = currentQuestion.question;
+    if (question != null) {
+        question.innerText = currentQuestion.question;
+    }
 
     choices.forEach(choice => {
         const number = choice.dataset.number;

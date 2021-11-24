@@ -7,15 +7,19 @@ const mostRecentScore = localStorage.getItem('mostRecentScore');
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
 //Will always add the latest user score on the top
-finalScore.innerText = mostRecentScore;
+if (finalScore != null) {
+    finalScore.innerText = mostRecentScore;
+}
 
 /*
 *This feature will allow the user to press Key up to select the latest
 * username that was entered prior
 */
-username.addEventListener('keyup', () => {
-    saveScoreBtn.disabled = !username.value ;
-});
+if (username != null) {
+    username.addEventListener('keyup', () => {
+        saveScoreBtn.disabled = !username.value ;
+    });
+}
 
 /*
 * Prevents autorefresh so that the top 5 usersnames 

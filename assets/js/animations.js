@@ -58,7 +58,9 @@ function openGame(game) {
   if(game == null) 
   return;
   game.classList.add('active');
-  overlay.classList.add('active');
+  if (overlay.classList != undefined) {
+    overlay.classList.push('active');
+  }  
 }
 
 
@@ -72,7 +74,9 @@ closeGameButtons.forEach(button => {
 function closeGame(game) {
   if(game == null) return;
   game.classList.remove('active');
-  overlay.classList.remove('active');
+  if (overlay != undefined) {
+    overlay.classList.remove('active');
+  }
 }
 
 
@@ -98,14 +102,18 @@ function openContact(contact) {
   if (contact == null) 
   return;
     contact.classList.add('active');
-    overlay.classList.add('active');
+    if (overlay != undefined) {
+      overlay.classList.add('active');
+    }
 }
 
 function closeContact(contact) {
   if (contact == null) 
   return;
   contact.classList.remove('active');
-  overlay.classList.remove('active');
+  if (overlay != undefined) {
+    overlay.classList.remove('active');
+  }
 }
 
 // Exit button Animation
@@ -129,13 +137,17 @@ closeExitButtons.forEach(span => {
 function openExit(exit) {
   if (exit == null) 
   return;
-    exit.classList.add('active');
+  exit.classList.add('active');
+  if (overlay != undefined) {
     overlay.classList.add('active');
+  }
 }
 
 function closeExit(exit) {
   if (exit == null) 
   return;
   exit.classList.remove('active');
-  overlay.classList.remove('active');
+  if (overlay != undefined) {
+    overlay.classList.remove('active');
+  }
 }
