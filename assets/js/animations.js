@@ -34,14 +34,18 @@ function openRules(rules) {
   if (rules == null) 
   return;
     rules.classList.add('active');
-    overlay.classList.add('active');
+    if (overlay.classList != undefined) {
+      overlay.classList.add('active');
+    }
 }
 
 function closeRules(rules) {
   if (rules == null) 
   return;
   rules.classList.remove('active');
-  overlay.classList.remove('active');
+  if (overlay.classList != undefined) {
+    overlay.classList.remove('active');
+  }
 }
 
 // Start Quiz Animation Window
