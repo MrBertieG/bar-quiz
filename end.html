@@ -28,14 +28,17 @@
             <div id="end">
                 <h1>Your Score is:</h1>
                 <h1 id="finalScore">0</h1>
-                    <form name="fname" id ="form" class="end-form-container">
+
+                    <form name="fname" class="end-form-container" onsubmit="saveHighScore(event)">
+
                         <h2 id="end-text">Enter your name below to save your final score:</h2>
 
-                        <input type="text" required name="names" id="username" placeholder="Enter your name:">
+                        <input required type="text" name="names" id="username" placeholder="Enter your name:">
 
-                        <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" onclick="userAlert()" disabled>Save</button>
-                    </form>    
-                    </div>
+                        <button type="submit" class="btn" id="saveScoreBtn" >Save</button>
+                    
+                    </form>
+            </div>
             <a href="new-quiz-page.html" class="btn">Play Again</a>
             <a href="index.html" class="btn">Go Home</a>
         </div>

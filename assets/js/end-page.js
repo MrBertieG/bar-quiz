@@ -4,6 +4,7 @@ const finalScore = document.querySelector('#finalScore');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
 const highScoresList = document.querySelector('#highScoresList');
 
+
 //This will be used for storing the names and scores on local storage
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
@@ -39,13 +40,17 @@ if (username != null) {
 */
 
 function userAlert() {
-    alert('Please enter a name');
+    let x = document.forms["fname"]["names"].value;
+    if (x == "") {
+        alert("Please enter a name");
+        return false;
+    }
 }
 
 let saveHighScore = e => {
 
     e.preventDefault ();
-
+    
     const score = {
         score: mostRecentScore,
         name: username.value
