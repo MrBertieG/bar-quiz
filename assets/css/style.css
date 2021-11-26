@@ -147,22 +147,14 @@ li.fade {
 
 /*Main Banner Image*/
 #main-banner-container {
-	width: 100%;
-	height: 100%;
-	margin-top: 10%;
-	position: relative;
+	width: 560px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -97px;
 }
 
-#main-banner-container::after {
-	content: "";
-	background-color: black;
-	width: 100%;
-	height: 99%;
-	position: absolute;
-	left: 0;
-	opacity: 0.3;
-	top: 0;
-}
+
 
 #main-banner-container>img {
 	width: 100%;
@@ -232,7 +224,6 @@ a.l-btn {
 	text-align: center;
 	padding: 1px;
 }
-
 
 
 /* Quiz Page */
@@ -789,12 +780,10 @@ a {
 
 @media screen and (min-width: 500px) {
 	nav {
-		width: 100%;
-		overflow: hidden;
-		position: fixed;
+		width: 562px;
 		z-index: 20;
-		grid-template-columns: 21% 1fr 1fr 15%;
-		margin-top: -10%;
+		grid-template-columns: 22% 1fr 1fr 15%;
+		margin: 0 auto;
 	}
 	.hamburger {
 		display: none;
