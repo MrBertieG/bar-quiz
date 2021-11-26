@@ -3,12 +3,14 @@ const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li');
 
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-  links.forEach(link => {
-    link.classList.toggle('fade');
+if (hamburger != null) {
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    links.forEach(link => {
+      link.classList.toggle('fade');
+    });
   });
-});
+}
 
 const openRulesButtons = document.querySelectorAll('[data-rules-target]');
 const closeRulesButtons = document.querySelectorAll('[data-close-button]');

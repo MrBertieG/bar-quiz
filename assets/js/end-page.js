@@ -38,6 +38,10 @@ if (username != null) {
 * will also prevent the Save button working if no username inputed
 */
 
+function userAlert() {
+    alert('Please enter a name');
+}
+
 let saveHighScore = e => {
 
     e.preventDefault ();
@@ -54,7 +58,7 @@ let saveHighScore = e => {
     });
 
     highScores.splice(5);
-    //Sends user to Home page after pressing Save
+    //Sends user to Highscore page after pressing Save
     localStorage.setItem('highScores', JSON.stringify(highScores));
     window.location.assign('highscores.html');
 };

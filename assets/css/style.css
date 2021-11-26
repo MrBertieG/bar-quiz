@@ -635,6 +635,10 @@ a {
 	line-height: 30px;
 }
 
+#leader {
+	border-bottom: 1px solid black;
+}
+
 #saveScoreBtn {
 	border-radius: 5px;
 	cursor: pointer;
