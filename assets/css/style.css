@@ -13,13 +13,15 @@ html {
 /* Navigation Bar Start*/
 nav {
 	overflow: hidden;
-	position: relative;
-	background-color: rgb(174, 49, 14, 0.8);
-	display: grid;
-	grid-template-columns: 10% 1fr 1fr 15%;
-	min-height: 10vh;
-	color: white;
-	align-items: center;
+    position: relative;
+    background-color: rgb(174, 49, 14, 0.8);
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 15%;
+    min-height: 10vh;
+    color: white;
+    align-items: center;
+    margin: 0 auto;
+    width: 375px;
 }
 
 .nav-links li a {
@@ -147,11 +149,11 @@ li.fade {
 
 /*Main Banner Image*/
 #main-banner-container {
-	width: 560px;
-    height: 800px;
+	width: 375px;
+    height: 538px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -97px;
+    margin-top: 30px;
 }
 
 
@@ -165,7 +167,7 @@ li.fade {
 #main-intro {
 	background-color: rgb(223, 203, 192);
 	width: 270px;
-	height: 164px;
+	height: 186px;
 	position: fixed;
 	top: 25%;
 	left: 0;
@@ -188,7 +190,7 @@ li.fade {
 	width: 160px;
 	height: 40px;
 	position: fixed;
-	top: 66%;
+	top: 60%;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -210,7 +212,7 @@ a.l-btn {
 	width: 160px;
 	height: fit-content;
 	position: fixed;
-	top: 59%;
+	top: 52%;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -265,7 +267,7 @@ a.l-btn {
 	width: 160px;
 	height: 40px;
 	position: fixed;
-	top: 60%;
+	top: 54%;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -319,7 +321,7 @@ a.l-btn {
 	bottom:0;
 	left: 0;
 	height: fit-content;
-	width: 534px;
+	width: 354px;
 	margin: 0 auto;
 	border-radius: 5px;
 	font-family: Exo,sans-serif;
@@ -561,7 +563,7 @@ legend {
 footer {
 	text-align: center;
     background-color: rgb(174, 49, 14, 0.8);
-    width: 560px;
+    width: 375px;
     margin: 0 auto;
     height: 33px;
 }
@@ -676,7 +678,7 @@ a {
 	flex-direction: column;
 	text-align: center;
 	line-height: 45px;
-	height: 60%;
+	height: 50%;
 	width: 95%;
 	margin: 0 auto;
 	border-radius: 5px;
@@ -787,6 +789,13 @@ a {
 /* Screen Size > 500px */
 
 @media screen and (min-width: 500px) {
+	#main-banner-container {
+		width: 560px;
+		height: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
 	nav {
 		width: 562px;
 		z-index: 20;
@@ -890,6 +899,9 @@ a {
 	}
 }
 
+footer {
+	width: 560px;
+}
 
 /* Screen Size > 1250px */
 
