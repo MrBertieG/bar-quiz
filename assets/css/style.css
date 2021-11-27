@@ -34,7 +34,7 @@ nav {
 	position: relative;
 	left: 10%;
 	font-family: Oswald, sans-serif;
-	color: black;
+	color: white;
 	font-size: 211%;
 	justify-self: left;
 	padding-left: 15px;
@@ -165,7 +165,7 @@ li.fade {
 #main-intro {
 	background-color: rgb(223, 203, 192);
 	width: 270px;
-	height: 190px;
+	height: 164px;
 	position: fixed;
 	top: 25%;
 	left: 0;
@@ -319,7 +319,7 @@ a.l-btn {
 	bottom:0;
 	left: 0;
 	height: fit-content;
-	width: 75%;
+	width: 534px;
 	margin: 0 auto;
 	border-radius: 5px;
 	font-family: Exo,sans-serif;
@@ -377,7 +377,7 @@ a.l-btn {
 }
 
 .rules-list {
-	padding-top: 25px;
+	padding-top: 17px;
 	padding-left: 25px;
 }
 
@@ -499,6 +499,9 @@ a.l-btn {
 	background-color: rgba(174, 49, 14, 1);
 	pointer-events: none;
 	z-index: 10;
+	width: 560px;
+	height: 897px;
+	margin: 0 auto;
 }
 
 .overlay.active {
@@ -823,7 +826,7 @@ a {
 	}
 
 	ol {
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	.rules-list {
@@ -930,10 +933,6 @@ a {
     	padding-top: 10px;
 	}
 
-	.game {
-		width: 534px;
-	}
-
 	.exit-container {
 		width: 534px;
 	}
@@ -947,9 +946,6 @@ a {
 		padding-left: 6px;
 	}
 	.rules-title {
-		font-size: 18px;
-	}
-	ol {
 		font-size: 18px;
 	}
 	.nav-links {
