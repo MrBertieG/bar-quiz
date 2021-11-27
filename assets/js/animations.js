@@ -2,6 +2,8 @@
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li');
+const navLinksLi = document.querySelectorAll('.nav-links li')
+const closeNavLinksLi = document.querySelectorAll('.x-btn') 
 
 if (hamburger != null) {
   hamburger.addEventListener('click', () => {
@@ -11,6 +13,20 @@ if (hamburger != null) {
     });
   });
 }
+
+navLinksLi.forEach(link => {
+  link.addEventListener("click", () => {
+  const overlay = document.querySelector(".overlay");
+  overlay.classList.add("active")
+  });
+  });
+
+  closeNavLinksLi.forEach(link => {
+    link.addEventListener("click", () => {
+    const overlay = document.querySelector(".overlay");
+    overlay.classList.remove("active")
+    });
+    });
 
 const openRulesButtons = document.querySelectorAll('[data-rules-target]');
 const closeRulesButtons = document.querySelectorAll('[data-close-button]');
