@@ -39,14 +39,6 @@ if (username != null) {
 * will also prevent the Save button working if no username inputed
 */
 
-function userAlert() {
-    let x = document.forms["fname"]["names"].value;
-    if (x == "") {
-        alert("Please enter a name");
-        return false;
-    }
-}
-
 let saveHighScore = e => {
 
     e.preventDefault ();

@@ -13,8 +13,10 @@ Bar Quiz is an interractive website designed to engage with users and test their
 
 ### [1. User Experience](#user-ex) 
 - User Expectations
+    - A new user
+    - A returning user
+    - A frequent user
 - Design Approach
-- Returning Users
 ### [2. Features](#features)
 - Navigation Bar
 - Home Page
@@ -49,6 +51,9 @@ Bar Quiz is an interractive website designed to engage with users and test their
 ### A frequent user:
 - A frequent user would want to know of any new questions which might have been added to the quiz and compare scores(localy).
 
+### Design Approach
+
+- The website's colour scheame was chosen using a Chrome extension called Eye Dropper. I have selected some colour samples from the main pucture banner and used it consistently throughout the site.
 <br><br>
 
 [Top of the page](#top)
@@ -248,7 +253,9 @@ End Page | Clicking on the Home Logo will take you to the Landing Page. <br> Cli
 Contact Form | Clicking "Leave Feedback!" button without entering a name and a valid email will not submit. <br> Entering a name and a valid email and a message will allow you to submit the form. <br> The "Clear" button will clear all of the information. | PASS
 Text | All fonts and colours have been consistent throughout the website | PASS
 Footer | The footer contains four social media icons. It is found on all three pages in the exact location on each page. The four social media icons are: Facebook, Instagram, Youtube, Twitter which when clicked, will redirect the user to their respective website. This will work on all three pages. | PASS
+Console Errors | Each page was checked for active console errors. This was done by having DevTools open in the backgroubd and running throgh every single page. | PASS
 
+<br><br>
 
 - Chrome Developer Tools Lighthouse. The Performance is overall good due to the minimal amount of images used on the website. The test was ran for the Mobile and Desktop Version. <br>
 

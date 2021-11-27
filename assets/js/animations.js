@@ -2,9 +2,13 @@
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li');
-const navLinksLi = document.querySelectorAll('.nav-links li')
-const closeNavLinksLi = document.querySelectorAll('.x-btn') 
+const navLinksLi = document.querySelectorAll('.nav-links li');
+const closeNavLinksLi = document.querySelectorAll('.x-btn');
 
+/*
+* This allows for the overlay effect to take place
+* once the hamburger menu was clicked
+*/
 if (hamburger != null) {
   hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('open');
@@ -14,25 +18,30 @@ if (hamburger != null) {
   });
 }
 
+/*
+* This allows for the overlay effect to take place
+* once the each navigation bar link has been clicked
+*/
 navLinksLi.forEach(link => {
   link.addEventListener("click", () => {
   const overlay = document.querySelector(".overlay");
-  overlay.classList.add("active")
+  overlay.classList.add("active");
   });
   });
 
-  closeNavLinksLi.forEach(link => {
-    link.addEventListener("click", () => {
-    const overlay = document.querySelector(".overlay");
-    overlay.classList.remove("active")
-    });
-    });
+// This closes the overlay effect
+closeNavLinksLi.forEach(link => {
+  link.addEventListener("click", () => {
+  const overlay = document.querySelector(".overlay");
+  overlay.classList.remove("active");
+  });
+  });
 
 const openRulesButtons = document.querySelectorAll('[data-rules-target]');
 const closeRulesButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementsByClassName('overlay');
 
-//Rules Animation Window
+//Rules Animation Window once clicked
 openRulesButtons.forEach(button => {
   button.addEventListener('click', () => {
     const rules = document.querySelector(button.dataset.rulesTarget);
@@ -40,7 +49,7 @@ openRulesButtons.forEach(button => {
   });
 });
 
-//Close Rules Window
+//Close Rules Window once clicked
 closeRulesButtons.forEach(button => {
   button.addEventListener('click', () => {
     const rules = button.closest('.rules');
@@ -48,6 +57,7 @@ closeRulesButtons.forEach(button => {
   });
 });
 
+// This will open the modal and add an overlay background
 function openRules(rules) {
   if (rules == null) 
   return;
@@ -57,6 +67,7 @@ function openRules(rules) {
     }
 }
 
+// This closes the modal and removes the overlay
 function closeRules(rules) {
   if (rules == null) 
   return;
@@ -66,19 +77,24 @@ function closeRules(rules) {
   }
 }
 
-// Start Quiz Animation Window
+// Start Quiz Animation Window when clicked
 const openGameButtons = document.querySelectorAll('[data-game-target]');
 const closeGameButtons = document.querySelectorAll('[data-close-button]');
-//Close Quiz Window
+
+/*
+* This allows for the overlay effect to take place
+* once the Start Link in the nav bar was clicked
+*/
 openGameButtons.forEach(button => {
   button.addEventListener('click', () => {
     const game = document.querySelector(button.dataset.gameTarget);
     const overlay = document.querySelector(".overlay");
-    overlay.classList.add("active")
+    overlay.classList.add("active");
     openGame(game);
   });
 });
 
+// Openes the quiz page and adds backgroubd overlay
 function openGame(game) {
   if(game == null) 
   return;
@@ -88,7 +104,7 @@ function openGame(game) {
   }  
 }
 
-
+// Closes the quiz page and removes the background overlay
 closeGameButtons.forEach(button => {
   button.addEventListener('click', () => {
     const game = button.closest('.game');
@@ -104,8 +120,7 @@ function closeGame(game) {
   }
 }
 
-
-//Contact Animation Window
+//Contact Animation Window openes when clicked
 const openContactButtons = document.querySelectorAll('[data-contact-target]');
 const closeContactButtons = document.querySelectorAll('[data-close-button]');
 
@@ -115,7 +130,8 @@ openContactButtons.forEach(button => {
     openContact(contact);
   });
 });
-//Close Contact Window
+
+//Close Contact Window closes when clicked
 closeContactButtons.forEach(button => {
   button.addEventListener('click', () => {
     const contact = button.closest('.contact');
@@ -123,6 +139,7 @@ closeContactButtons.forEach(button => {
   });
 });
 
+// This openes the contact window with an background overlay
 function openContact(contact) {
   if (contact == null) 
   return;
@@ -132,6 +149,7 @@ function openContact(contact) {
     }
 }
 
+// This closes the contact window with an background overlay
 function closeContact(contact) {
   if (contact == null) 
   return;
@@ -141,7 +159,7 @@ function closeContact(contact) {
   }
 }
 
-// Exit button Animation
+// Exit button Animation when clicked
 const openExitButtons = document.querySelectorAll('[data-exit-target]');
 const closeExitButtons = document.querySelectorAll('[data-close-i]');
 
@@ -151,7 +169,7 @@ openExitButtons.forEach(i => {
     openExit(exit);
   });
 });
-//Close Exit Window
+//Close Exit Window when clicked
 closeExitButtons.forEach(span => {
   span.addEventListener('click', () => {
     const exit = span.closest('.exit-container');
@@ -159,6 +177,7 @@ closeExitButtons.forEach(span => {
   });
 });
 
+// Openes the modal
 function openExit(exit) {
   if (exit == null) 
   return;
@@ -168,6 +187,7 @@ function openExit(exit) {
   }
 }
 
+// Closes the modal
 function closeExit(exit) {
   if (exit == null) 
   return;
