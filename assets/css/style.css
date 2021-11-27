@@ -153,7 +153,6 @@ li.fade {
     height: 538px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
 }
 
 
@@ -212,7 +211,7 @@ a.l-btn {
 	width: 160px;
 	height: fit-content;
 	position: fixed;
-	top: 52%;
+	top: 71%;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -502,7 +501,7 @@ a.l-btn {
 	pointer-events: none;
 	z-index: 10;
 	width: 560px;
-	height: 897px;
+	height: 96%;
 	margin: 0 auto;
 }
 
@@ -848,15 +847,16 @@ a {
 	}
 
 	.exit-container {
-		width: 50%;
-		top: 24%;
+		width: 534px;
+		top: 16%;
+		height: 429px;
 	}
 	#main-intro {
 		width: 350px;
 	}
 
 	.start-quiz {
-		top: 60%;
+		top: 70%;
 	}
 
 	.description-box {
@@ -897,10 +897,15 @@ a {
 		text-align: center;
 		padding: 1px;
 	}
-}
 
-footer {
-	width: 560px;
+	.game {
+		width: 510px;
+	}
+
+	footer {
+		width: 560px;
+	}
+
 }
 
 /* Screen Size > 1250px */
@@ -947,6 +952,7 @@ footer {
 
 	.exit-container {
 		width: 534px;
+		top: 15%;
 	}
 	.description-box {
 		width: 500px;

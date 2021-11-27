@@ -73,6 +73,8 @@ const closeGameButtons = document.querySelectorAll('[data-close-button]');
 openGameButtons.forEach(button => {
   button.addEventListener('click', () => {
     const game = document.querySelector(button.dataset.gameTarget);
+    const overlay = document.querySelector(".overlay");
+    overlay.classList.add("active")
     openGame(game);
   });
 });
