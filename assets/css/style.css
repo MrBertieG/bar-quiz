@@ -129,6 +129,24 @@ nav {
 	font-size: 25px;
 }
 
+.go-btn {
+	font-family: Exo, sans-serif;
+	background-color: rgb(223, 203, 192);
+	width: 160px;
+	height: 40px;
+	position: fixed;
+	top: 50%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
+	border: 3px solid rgb(248, 231, 222);
+	border-radius: 10px;
+	pointer-events: all;
+	font-size: 18px;
+	font-weight: 800;
+	cursor: pointer;
+}
 
 /* Fade Animation */
 .nav-links li:nth-child(1) {
@@ -154,8 +172,6 @@ li.fade {
     margin-left: auto;
     margin-right: auto;
 }
-
-
 
 #main-banner-container>img {
 	width: 100%;
@@ -183,24 +199,6 @@ li.fade {
 	text-align: center;
 }
 
-.go-btn {
-	font-family: Exo, sans-serif;
-	background-color: rgb(223, 203, 192);
-	width: 160px;
-	height: 40px;
-	position: fixed;
-	top: 60%;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	margin: 0 auto;
-	border: 3px solid rgb(248, 231, 222);
-	border-radius: 10px;
-	pointer-events: all;
-	font-size: 18px;
-	font-weight: 800;
-	cursor: pointer;
-}
 a.l-btn {
 	text-decoration: none;
 }
@@ -211,7 +209,7 @@ a.l-btn {
 	width: 160px;
 	height: fit-content;
 	position: fixed;
-	top: 71%;
+	top: 58%;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -488,7 +486,27 @@ a.l-btn {
 	background-color: rgba(174, 49, 14, 1);
 	width: 0;
 }
-
+/* Leaderboard Page */
+.h-btn {
+	font-family: Exo, sans-serif;
+	background-color: rgb(223, 203, 192);
+	width: 160px;
+	height: 31px;
+	position: fixed;
+	top: 50%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
+	border: 3px solid rgb(248, 231, 222);
+	border-radius: 10px;
+	pointer-events: all;
+	font-size: 18px;
+	font-weight: 800;
+	cursor: pointer;
+	text-align: center;
+	color: black;
+}
 /* Overlay Animation */
 .overlay {
 	position: fixed;
@@ -757,27 +775,6 @@ a {
 	text-align: center;
 }
 
-.h-btn {
-	font-family: Exo, sans-serif;
-	background-color: rgb(223, 203, 192);
-	width: 160px;
-	height: 31px;
-	position: fixed;
-	top: 69%;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	margin: 0 auto;
-	border: 3px solid rgb(248, 231, 222);
-	border-radius: 10px;
-	pointer-events: all;
-	font-size: 18px;
-	font-weight: 800;
-	cursor: pointer;
-	text-align: center;
-	color: black;
-}
-
 #highScoresList {
 	font-size: 20px;
 	margin: 10px;
@@ -876,6 +873,10 @@ a {
 		width: 500px;
 	}
 
+	.go-btn {
+		top: 64%;
+	}
+
 	.l-btn {
 		font-family: Exo, sans-serif;
 		background-color: rgb(223, 203, 192);
@@ -883,7 +884,7 @@ a {
 		width: 160px;
 		height: fit-content;
 		position: fixed;
-		top: 61%;
+		top: 58%;
 		right: 0;
 		bottom: 0;
 		left: 0;
@@ -896,6 +897,10 @@ a {
 		cursor: pointer;
 		text-align: center;
 		padding: 1px;
+	}
+
+	.h-btn {
+		top: 69%;
 	}
 
 	.game {
