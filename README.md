@@ -31,6 +31,8 @@ Bar Quiz is an interractive website designed to engage with users and test their
 ### [5. Manual Testing](#manual-testing)
 ### [6. Technologies Used](#tech-used)
 ### [7. Bugs](#bugs)
+- Known Bugs
+- Remaining Bugs
 ### [8. Credits](#credits)
 
 <br><br>
@@ -40,7 +42,7 @@ Bar Quiz is an interractive website designed to engage with users and test their
 ## <a name="user-ex">1. User Experience</a>
 
 ### User Expectations
-- The main goal of this quiz is to establish if users know what a classick cocktail is made of. At the end of each quiz users will be given a score and compare themselvs against other users.<br>
+The main goal of this quiz is to establish if users know what a classick cocktail is made of. At the end of each quiz users will be given a score and compare themselvs against other users.<br>
 
 ### A new user:
 - A user visiting the page for the first time will be able to understand what to do and be able to navigate the page with ease. <br>
@@ -53,7 +55,9 @@ Bar Quiz is an interractive website designed to engage with users and test their
 
 ### Design Approach
 
-- The website's colour scheame was chosen using a Chrome extension called Eye Dropper. I have selected some colour samples from the main pucture banner and used it consistently throughout the site.
+The website's colour scheame was chosen using a Chrome extension called Eye Dropper. I have selected some colour samples from the main pucture banner and used it consistently throughout the site.<br>
+I have chosen to make the use of modals because it gives the website more interactability compared to a website soley designed using HTML and CSS.<br>
+This website could be used by companies to test the knowledge of Cocktail Bartenders and Mixologists. More questions can be eassilly added and scores can be generated in order to markup the individual's general knowledge on classisc cocktails and other drinks.
 <br><br>
 
 [Top of the page](#top)
@@ -177,6 +181,7 @@ At the end of the quiz, mobile version or desktop, the user is presented with th
 - Save the score. Where the Score will be saved locally and presented in the Leaderboard Page.
 - Play Again, where the quiz will restart without saving the score.
 - Go to the Home Page without saving the score. <br>
+- User Validation. The user cannot save the final score if a name hasn't been inputed.
 ![End Quiz Mobile](assets/images/readme_img/end_mobile.png)
 <br><br>
 
@@ -249,7 +254,7 @@ Landing Page |Clicking on Top 5 Tom Cruises will take you to the Leaderboard Pag
 Leaderboard Page| Clicking on the House logo will take you to the Landing Page. Clicking on the "Home Button" will take you to the Landing Page | PASS
 Quiz Page| Clicking on the Home Logo will take you to the Landing Page. <br> Clicking on the Rules button will open modal window. <br> Clicking on the Start button will open modal window with the Quiz. <br> Clicking on the Contact button will open a modal window with a feedback form. <br> Clicking on the X on the modal wildows will close the windows. <br> Clicking on "Take Test" will open a modal window with the quiz. <br> Clicking on the Exit Logo will open a modal window. <br> Clicking On "Yes" will send you to the Landing Page. <br> Clicking on "No" will close the exit modal.| PASS
 Quiz Modal | Clicking on any of the 4 answers will trigger the next question to load. <br> Clicking on the X will close the quiz modal. <br> Completing the quiz will close the quiz modal window.| PASS
-End Page | Clicking on the Home Logo will take you to the Landing Page. <br> Clicking on the "Save" buttion without entering a name will not save the score. <br> Entering a name in the input box and pressing "Save" will save the score and load the Landing Page. <br> Clicking on "Play Again" will take you to the Quiz Page where you can start again. <br> Clicking on "Go Home" will take you to the Landing Page. | PASS
+End Page | Clicking on the Home Logo will take you to the Landing Page. <br> Clicking on the "Save" button without entering a name will not allow the user to save and a message will appear asking to fill the name field.. <br> Entering a name in the input box and pressing "Save" will save the score and load the Landing Page. <br> Clicking on "Play Again" will take you to the Quiz Page where you can start again. <br> Clicking on "Go Home" will take you to the Landing Page. | PASS
 Contact Form | Clicking "Leave Feedback!" button without entering a name and a valid email will not submit. <br> Entering a name and a valid email and a message will allow you to submit the form. <br> The "Clear" button will clear all of the information. | PASS
 Text | All fonts and colours have been consistent throughout the website | PASS
 Footer | The footer contains four social media icons. It is found on all three pages in the exact location on each page. The four social media icons are: Facebook, Instagram, Youtube, Twitter which when clicked, will redirect the user to their respective website. This will work on all three pages. | PASS
@@ -323,12 +328,28 @@ Console Errors | Each page was checked for active console errors. This was done 
 [Top of the page](#top)
 
 ### <a name="bugs">7.Bugs</a>
-- The main bug incountered was when the website was deployed and some pages displayed a " 404 page not found$ error. This was due to some file paths being written as an absolute file path and not as a relative path. Changing the path's structure has eliminated the bug. 
-- The Contact modal was not centered to the page correctly.
-- The Contact submission buttons did not have sufficient padding.
-- The Header logo did not have sufficient padding. 
-- The modal close X button was too small and not consistent with other pages
 
+### Known Bugs
+
+Problem: <br> Whilst developing and running the website, I have noticed that some console errors, in devtools, were present in the background, albeit the website was functionally normally. An example of a such error was ‘highScores has already been declared'. The reason for this was because the variable highScores was present in two separate JS files where the variable was used more than once.
+
+Solution: <br> To solve this I have merged the two JS files together and declared the variable only once. This has helped solving the error.
+
+Problem: <br> Another bug encountered was when the website was deployed and some pages displayed a " 404 page not found' error. This was due to some file paths being written as an absolute file path and not as a relative path. 
+
+Solution: <br>Changing the path's structure has eliminated the bug.
+
+Problem: <br> The buttons on all of the pages were changing positions if the screen size was equivalent to a really small screen such an iPhone 5. 
+
+Solution:<br> I have slightly readjusted the buttons ia a way that they do not overlap. However it is reccomended to open the website in screens bigger than 320px.
+
+Problem:<br> When opening the modals, an overlay should have activated to cover the background so the windows don't overlap. The function was written however the overlay didn't activate.
+
+Solution:<br> I had to create another variable which selected all navbar links. Then after I had to itterate over them and added a click Event Listener which activated the background overlay. The same process was followed for the deactivation of the overlay except the close 'X' symbol was selected for the closure.
+
+### Remaining Bugs
+
+There are no remaining bugs however the website could have been improved for devices with screens smaller than 375px. Another media query would have been added for that purpose.
 
    <br><br> 
 
@@ -341,4 +362,6 @@ The following resources were used to get inspiration in creating this Website. <
     - [Dev Ed](https://www.youtube.com/c/DevEd) for the ceration of the menu overlay effect and animation.
 - [Stack Overflow](https://stackoverflow.com/) (various posts) for the help in understanding certain functions and troubleshooting.
 - [Slack](https://slack.com/intl/en-gb/) for the help provided throught the development process.
--[W3schools](https://www.w3schools.com/) for the hamburger menu inspiration.
+- [W3schools](https://www.w3schools.com/) for the hamburger menu inspiration.
+- [Code Institute](https://codeinstitute.net/) Tutor Assistance for helping me with the console error troubleshoot.
+- My mentor Marcel for the constructive feedback throught the project. 
